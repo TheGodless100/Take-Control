@@ -206,6 +206,14 @@
         "name": "pixilart-drawing(4).png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(3).png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -242,7 +250,13 @@
         "selectedLayer": ""
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "ALien_rotation",
+          "type": "number",
+          "value": -5
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -257,6 +271,23 @@
           "x": 930,
           "y": 897,
           "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 5,
+          "height": 129,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Enemy_1",
+          "persistentUuid": "c72c2dcf-692f-4369-880b-4b8c2f79c477",
+          "width": 129,
+          "x": 174,
+          "y": 122,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -502,6 +533,66 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Enemy_1",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pixilart-drawing(3).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 3
+                          },
+                          {
+                            "x": 24,
+                            "y": 3
+                          },
+                          {
+                            "x": 24,
+                            "y": 19
+                          },
+                          {
+                            "x": 0,
+                            "y": 19
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -512,6 +603,9 @@
           },
           {
             "objectName": "ShipThrust"
+          },
+          {
+            "objectName": "Enemy_1"
           }
         ]
       },
@@ -715,6 +809,96 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Enemy_1",
+                ">=",
+                "ScreenWidth()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Enemy_1",
+                "Flippable",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ALien_rotation",
+                "=",
+                "-5"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Enemy_1",
+                "<=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Enemy_1",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ALien_rotation",
+                "=",
+                "5"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Enemy_1",
+                "+",
+                "ALien_rotation"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
