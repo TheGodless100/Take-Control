@@ -190,6 +190,22 @@
         "name": "sr5z8e28215537aws7.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "sr5z596e25b0d6aws3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sr5z596e25b0d6aws3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(4).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(4).png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -221,7 +237,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5995738389111077,
+        "zoomFactor": 0.27050126039625505,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -230,16 +246,17 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 87,
           "keepRatio": true,
           "layer": "",
-          "name": "ShipIdle",
-          "persistentUuid": "97c12561-4caa-40df-a0d3-5c3ab1b951b3",
-          "width": 0,
-          "x": 358,
-          "y": -105,
-          "zOrder": 1,
+          "name": "ShipThrust",
+          "persistentUuid": "b6a8dda4-0acd-48ac-bdfc-4d0a7f21721c",
+          "width": 87,
+          "x": 930,
+          "y": 897,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -249,7 +266,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "ShipIdle",
+          "name": "bullet",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -266,7 +283,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "sr5z8e28215537aws5.png",
+                      "image": "pixilart-drawing(4).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -282,20 +299,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
+                            "x": 6,
                             "y": 0
                           },
                           {
-                            "x": 1200,
+                            "x": 19,
                             "y": 0
                           },
                           {
-                            "x": 1200,
-                            "y": 1200
+                            "x": 19,
+                            "y": 25
                           },
                           {
-                            "x": 0,
-                            "y": 1200
+                            "x": 6,
+                            "y": 25
                           }
                         ]
                       ]
@@ -406,7 +423,7 @@
               "directions": [
                 {
                   "looping": true,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.25,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -491,14 +508,215 @@
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "ShipIdle"
+            "objectName": "bullet"
           },
           {
             "objectName": "ShipThrust"
           }
         ]
       },
-      "events": [],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Ship movement",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"w\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "ShipThrust",
+                    "-",
+                    "7"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"a\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "ShipThrust",
+                    "-",
+                    "7"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"s\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "ShipThrust",
+                    "+",
+                    "7"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"d\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "ShipThrust",
+                    "+",
+                    "7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Shooting",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::IsReadyToShoot"
+                  },
+                  "parameters": [
+                    "ShipThrust",
+                    "FireBullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Space\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::SetBulletLayer"
+                  },
+                  "parameters": [
+                    "ShipThrust",
+                    "FireBullet",
+                    "\"bullet\"",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "ShipThrust",
+                    "FireBullet",
+                    "ShipThrust.CenterX()-13",
+                    "ShipThrust.Y()",
+                    "bullet",
+                    "-90",
+                    "1000",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::SetCooldownOp"
+                  },
+                  "parameters": [
+                    "ShipThrust",
+                    "FireBullet",
+                    "=",
+                    "0.1",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -526,6 +744,59 @@
               "width": 0
             }
           ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "bullet",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
