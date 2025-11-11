@@ -214,6 +214,30 @@
         "name": "pixilart-drawing(3).png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "space1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "space1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(6).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(6).png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(5).png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -247,7 +271,7 @@
         "snap": false,
         "zoomFactor": 0.27050126039625505,
         "windowMask": false,
-        "selectedLayer": ""
+        "selectedLayer": "Background"
       },
       "objectsGroups": [],
       "variables": [
@@ -288,6 +312,151 @@
           "x": 174,
           "y": 122,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 1445,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Background",
+          "persistentUuid": "19abb381-1c7b-4eba-bfe8-5f96c59b4f31",
+          "width": 2557,
+          "x": -296,
+          "y": -102,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Star1",
+          "persistentUuid": "cb1fbd4e-c2a3-4532-8ca8-e292ccf727c8",
+          "width": 0,
+          "x": 114,
+          "y": 530,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Star2",
+          "persistentUuid": "c876dc2f-6f3d-40da-899f-dc68a4bea544",
+          "width": 0,
+          "x": 391,
+          "y": 260,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Star1",
+          "persistentUuid": "4fc07fbc-aa81-40f2-9fb4-662842b4e4d7",
+          "width": 0,
+          "x": 1423,
+          "y": 205,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Star2",
+          "persistentUuid": "93f80331-e417-4081-b7ab-94a3ee2c73d4",
+          "width": 0,
+          "x": 1829,
+          "y": 449,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Star1",
+          "persistentUuid": "dc555a5e-c749-4533-be2a-0ac16eaf2eaf",
+          "width": 0,
+          "x": 358,
+          "y": 60,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Star1",
+          "persistentUuid": "e758f16a-3372-47a6-935b-029e17a6c8bb",
+          "width": 0,
+          "x": 388,
+          "y": 541,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Star1",
+          "persistentUuid": "63ae4727-f5b5-424c-a0c7-92a0c88b7c5a",
+          "width": 0,
+          "x": 924,
+          "y": 179,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Star1",
+          "persistentUuid": "53bbb0bb-e3be-4458-a175-0f66b902a8ec",
+          "width": 0,
+          "x": 1245,
+          "y": 327,
+          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -593,6 +762,186 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Background",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "space1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1046,
+                            "y": 0
+                          },
+                          {
+                            "x": 1046,
+                            "y": 591
+                          },
+                          {
+                            "x": 0,
+                            "y": 591
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Star1",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pixilart-drawing(6).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 25,
+                            "y": 0
+                          },
+                          {
+                            "x": 25,
+                            "y": 25
+                          },
+                          {
+                            "x": 0,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Star2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pixilart-drawing(5).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 25,
+                            "y": 0
+                          },
+                          {
+                            "x": 25,
+                            "y": 25
+                          },
+                          {
+                            "x": 0,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -606,6 +955,15 @@
           },
           {
             "objectName": "Enemy_1"
+          },
+          {
+            "objectName": "Background"
+          },
+          {
+            "objectName": "Star1"
+          },
+          {
+            "objectName": "Star2"
           }
         ]
       },
@@ -642,6 +1000,16 @@
                     "-",
                     "7"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Star1",
+                    "-",
+                    "0.1"
+                  ]
                 }
               ]
             },
@@ -667,6 +1035,16 @@
                     "ShipThrust",
                     "-",
                     "7"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Star1",
+                    "-",
+                    "0.1"
                   ]
                 }
               ]
@@ -694,6 +1072,16 @@
                     "+",
                     "7"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Star1",
+                    "+",
+                    "0.1"
+                  ]
                 }
               ]
             },
@@ -719,6 +1107,16 @@
                     "ShipThrust",
                     "+",
                     "7"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Star1",
+                    "+",
+                    "0.1"
                   ]
                 }
               ]
@@ -756,11 +1154,11 @@
                   "subInstructions": [
                     {
                       "type": {
-                        "value": "KeyFromTextPressed"
+                        "value": "MouseButtonFromTextPressed"
                       },
                       "parameters": [
                         "",
-                        "\"Space\""
+                        "\"Left\""
                       ]
                     }
                   ]
@@ -902,6 +1300,59 @@
         }
       ],
       "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Background",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
         {
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
