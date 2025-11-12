@@ -238,6 +238,142 @@
         "name": "pixilart-drawing(5).png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "sr5z316387adacaws3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sr5z316387adacaws3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(7).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(7).png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "viber_image_2025-11-11_22-34-43-597.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "viber_image_2025-11-11_22-34-43-597.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "viber_image_2025-11-11_22-34-43-119.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "viber_image_2025-11-11_22-34-43-119.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "viber_image_2025-11-11_22-34-43-360.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "viber_image_2025-11-11_22-34-43-360.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(6)2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(6)2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(5)2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(5)2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "space2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "space2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(4)2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(4)2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(3)2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(3)2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(2).png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "sr5z8c2206de8daws3(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sr5z8c2206de8daws3(1).png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(1).png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Screenshot_2024-02-20_112246_-_Copy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Screenshot_2024-02-20_112246_-_Copy.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "firethruster.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "firethruster.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "firethrust.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "firethrust.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -950,7 +1086,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "sr5z8c2206de8daws7.png",
+                      "image": "firethrust.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -986,7 +1122,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "sr5zc8b6af1c04aws7.png",
+                      "image": "firethruster.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
