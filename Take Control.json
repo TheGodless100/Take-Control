@@ -374,6 +374,14 @@
         "name": "firethrust.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "sr5z9843a01b7aaws3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sr5z9843a01b7aaws3.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -405,7 +413,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4753585087126934,
+        "zoomFactor": 0.34118560234734535,
         "windowMask": false,
         "selectedLayer": "Background"
       },
@@ -448,23 +456,6 @@
           "x": 174,
           "y": 122,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2,
-          "height": 1445,
-          "keepRatio": true,
-          "layer": "Background",
-          "name": "Background",
-          "persistentUuid": "19abb381-1c7b-4eba-bfe8-5f96c59b4f31",
-          "width": 2557,
-          "x": -296,
-          "y": -102,
-          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -919,6 +910,23 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 1955,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Background",
+          "persistentUuid": "aec1469a-1ec0-444f-b5b5-d49c07fee7a3",
+          "width": 1955,
+          "x": -36,
+          "y": -25,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -1028,13 +1036,46 @@
               "bullet": false,
               "fixedRotation": false,
               "canSleep": true,
-              "shape": "Circle",
+              "shape": "Polygon",
               "shapeDimensionA": 500,
               "shapeDimensionB": 0,
               "shapeOffsetX": 0,
               "shapeOffsetY": 0,
               "polygonOrigin": "Center",
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": -227,
+                  "y": 600
+                },
+                {
+                  "x": 221,
+                  "y": 600
+                },
+                {
+                  "x": 594,
+                  "y": 350
+                },
+                {
+                  "x": 600,
+                  "y": -118
+                },
+                {
+                  "x": 88,
+                  "y": -591
+                },
+                {
+                  "x": -107,
+                  "y": -600
+                },
+                {
+                  "x": -600,
+                  "y": -73
+                },
+                {
+                  "x": -600,
+                  "y": 362
+                }
+              ],
               "density": 10,
               "friction": 2,
               "restitution": 0.2,
@@ -1242,7 +1283,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "space1.png",
+                      "image": "sr5z9843a01b7aaws3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1262,16 +1303,16 @@
                             "y": 0
                           },
                           {
-                            "x": 1046,
+                            "x": 1200,
                             "y": 0
                           },
                           {
-                            "x": 1046,
-                            "y": 591
+                            "x": 1200,
+                            "y": 1200
                           },
                           {
                             "x": 0,
-                            "y": 591
+                            "y": 1200
                           }
                         ]
                       ]
