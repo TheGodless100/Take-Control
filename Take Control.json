@@ -382,6 +382,14 @@
         "name": "sr5z9843a01b7aaws3.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "powerup1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "powerup1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -413,7 +421,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.34118560234734535,
+        "zoomFactor": 0.29879853636069065,
         "windowMask": false,
         "selectedLayer": "Background"
       },
@@ -921,8 +929,8 @@
           "name": "Background",
           "persistentUuid": "aec1469a-1ec0-444f-b5b5-d49c07fee7a3",
           "width": 1955,
-          "x": -36,
-          "y": -25,
+          "x": -16,
+          "y": -4,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -1442,6 +1450,66 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "PowerupLaserII",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "powerup1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1200,
+                            "y": 0
+                          },
+                          {
+                            "x": 1200,
+                            "y": 1200
+                          },
+                          {
+                            "x": 0,
+                            "y": 1200
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1458,6 +1526,9 @@
           },
           {
             "objectName": "Background"
+          },
+          {
+            "objectName": "PowerupLaserII"
           },
           {
             "objectName": "Star1"
@@ -1725,6 +1796,15 @@
           "actions": [
             {
               "type": {
+                "value": "AjoutObjConcern"
+              },
+              "parameters": [
+                "",
+                "Enemy_1"
+              ]
+            },
+            {
+              "type": {
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
@@ -1740,7 +1820,7 @@
               "parameters": [
                 "Alien_rotation",
                 "=",
-                "-5"
+                "-3"
               ]
             }
           ]
@@ -1762,6 +1842,15 @@
           "actions": [
             {
               "type": {
+                "value": "AjoutObjConcern"
+              },
+              "parameters": [
+                "Enemy_1",
+                "Enemy_1"
+              ]
+            },
+            {
+              "type": {
                 "value": "FlippableCapability::FlippableBehavior::FlipX"
               },
               "parameters": [
@@ -1777,7 +1866,7 @@
               "parameters": [
                 "Alien_rotation",
                 "=",
-                "5"
+                "3"
               ]
             }
           ]
