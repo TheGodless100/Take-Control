@@ -1970,7 +1970,7 @@
                     "ShipThrust",
                     "FireBullet",
                     "=",
-                    "min(1, 0.2 + abs(ShipThrust.Y() - Enemy_1.Y()) / 500)\n",
+                    "min(1, 0.2 + abs(ShipThrust.Y() - Enemy_1.Y()) / 4000)\n",
                     ""
                   ]
                 }
