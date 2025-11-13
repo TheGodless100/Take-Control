@@ -486,6 +486,22 @@
         "name": "box.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "Am-big.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Am-big.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "mo-big.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "mo-big.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -517,7 +533,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.11805730185029291,
+        "zoomFactor": 0.24488383633725613,
         "windowMask": false,
         "selectedLayer": "Background"
       },
@@ -530,6 +546,17 @@
             },
             {
               "name": "oP"
+            }
+          ]
+        },
+        {
+          "name": "Ammo title",
+          "objects": [
+            {
+              "name": "Am"
+            },
+            {
+              "name": "mo"
             }
           ]
         }
@@ -552,10 +579,15 @@
           "name": "ShipThrust",
           "persistentUuid": "b6a8dda4-0acd-48ac-bdfc-4d0a7f21721c",
           "width": 87,
-          "x": 930,
-          "y": 897,
+          "x": 488,
+          "y": 834,
           "zOrder": 2,
-          "numberProperties": [],
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -1037,9 +1069,9 @@
           "name": "Background",
           "persistentUuid": "aec1469a-1ec0-444f-b5b5-d49c07fee7a3",
           "width": 1955,
-          "x": -16,
-          "y": -4,
-          "zOrder": 13,
+          "x": 0,
+          "y": 0,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1053,7 +1085,7 @@
           "name": "DashAfterEffect",
           "persistentUuid": "18c86d18-f093-4106-984e-4c5698c72507",
           "width": 0,
-          "x": 970,
+          "x": -140,
           "y": 959,
           "zOrder": 14,
           "numberProperties": [],
@@ -1107,6 +1139,57 @@
           "x": 346,
           "y": -484,
           "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 415,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "AmmoInventory",
+          "persistentUuid": "ef077379-a334-4f78-b230-e19f1c77ecb4",
+          "width": 297,
+          "x": 1624,
+          "y": 666,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 157,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Am",
+          "persistentUuid": "3835b0a4-34bf-4283-8af9-9df1b6df2e2c",
+          "width": 157,
+          "x": 1627,
+          "y": 541,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 157,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "mo",
+          "persistentUuid": "f2fd412e-a209-43e1-bc83-d80e2885a413",
+          "width": 157,
+          "x": 1760,
+          "y": 540,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1868,6 +1951,175 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 10,
+          "height": 32,
+          "leftMargin": 10,
+          "name": "AmmoInventory",
+          "rightMargin": 10,
+          "texture": "box.png",
+          "tiled": false,
+          "topMargin": 10,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Am",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Am-big.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 24,
+                            "y": 216
+                          },
+                          {
+                            "x": 1056,
+                            "y": 216
+                          },
+                          {
+                            "x": 1056,
+                            "y": 864
+                          },
+                          {
+                            "x": 24,
+                            "y": 864
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "mo",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "mo-big.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 48,
+                            "y": 288
+                          },
+                          {
+                            "x": 1128,
+                            "y": 288
+                          },
+                          {
+                            "x": 1128,
+                            "y": 864
+                          },
+                          {
+                            "x": 48,
+                            "y": 864
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1905,13 +2157,31 @@
           },
           {
             "objectName": "Box"
+          },
+          {
+            "objectName": "AmmoInventory"
+          },
+          {
+            "objectName": "Am"
+          },
+          {
+            "objectName": "mo"
           }
         ]
       },
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
           "actions": [
             {
               "type": {
@@ -1939,26 +2209,6 @@
                 "DashAfterEffect",
                 "=",
                 "0.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCenterX"
-              },
-              "parameters": [
-                "DashAfterEffect",
-                "=",
-                "ShipThrust.CenterX()"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCenterY"
-              },
-              "parameters": [
-                "DashAfterEffect",
-                "=",
-                "ShipThrust.CenterY()"
               ]
             },
             {
@@ -1998,8 +2248,38 @@
               "parameters": [
                 "Background",
                 "Resizable",
-                "ScreenWidth() + 180",
-                "ScreenHeight() + 130"
+                "ScreenWidth() + 200",
+                "ScreenWidth() + 200"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "ShipThrust",
+                "=",
+                "(ScreenWidth()+180)/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "ShipThrust.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterY"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "ShipThrust.CenterY()"
               ]
             }
           ]
@@ -2169,6 +2449,31 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "KeyFromTextJustPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"LShift\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ParticleSystem::StopEmission"
+                  },
+                  "parameters": [
+                    "DashAfterEffect"
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -2434,12 +2739,12 @@
           "conditions": [
             {
               "type": {
-                "value": "PosX"
+                "value": "CenterX"
               },
               "parameters": [
                 "Enemy_1",
                 ">=",
-                "ScreenWidth()"
+                "ScreenWidth()+180-(Enemy_1.Width()/2)"
               ]
             }
           ],
@@ -2533,6 +2838,26 @@
                 "Enemy_1",
                 "+",
                 "Alien_rotation"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "ShipThrust.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterY"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "ShipThrust.CenterY()"
               ]
             }
           ]
@@ -2711,6 +3036,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
         {
           "name": "Animation",
           "type": "AnimatableCapability::AnimatableBehavior"
