@@ -390,6 +390,102 @@
         "name": "powerup1.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "Sh.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sh.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "oP.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "oP.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "firethrust-small.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "firethrust-small.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "firethrust-small2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "firethrust-small2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "firethrust-small3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "firethrust-small3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "firethrust-small4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "firethrust-small4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "bullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bullet.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Alien1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Alien1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "galaxy1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "galaxy1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "star1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "star1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "star2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "star2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "box.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -421,11 +517,23 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.29879853636069065,
+        "zoomFactor": 0.11805730185029291,
         "windowMask": false,
         "selectedLayer": "Background"
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "Shop title",
+          "objects": [
+            {
+              "name": "Sh"
+            },
+            {
+              "name": "oP"
+            }
+          ]
+        }
+      ],
       "variables": [
         {
           "name": "Alien_rotation",
@@ -935,6 +1043,73 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "DashAfterEffect",
+          "persistentUuid": "18c86d18-f093-4106-984e-4c5698c72507",
+          "width": 0,
+          "x": 970,
+          "y": 959,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 332,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Box",
+          "persistentUuid": "1b1bf96a-bd00-4bd0-b0e5-4c1bb3eeeab5",
+          "width": 563,
+          "x": 34,
+          "y": -499,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 6,
+          "height": 309,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Sh",
+          "persistentUuid": "a6bd1ddf-6ba9-49d9-9c37-6249f4f6021c",
+          "width": 309,
+          "x": 35,
+          "y": -497,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 6,
+          "height": 291,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "oP",
+          "persistentUuid": "8a7efaf2-f20c-4858-aead-5fa60a054df4",
+          "width": 291,
+          "x": 346,
+          "y": -484,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -958,7 +1133,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "pixilart-drawing(4).png",
+                      "image": "bullet.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -974,20 +1149,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 0
+                            "x": 0,
+                            "y": 6
                           },
                           {
-                            "x": 19,
-                            "y": 0
+                            "x": 25,
+                            "y": 6
                           },
                           {
-                            "x": 19,
-                            "y": 25
+                            "x": 25,
+                            "y": 19
                           },
                           {
-                            "x": 6,
-                            "y": 25
+                            "x": 0,
+                            "y": 19
                           }
                         ]
                       ]
@@ -1208,54 +1383,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "sr5z8e28215537aws3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 1200,
-                            "y": 0
-                          },
-                          {
-                            "x": 1200,
-                            "y": 1200
-                          },
-                          {
-                            "x": 0,
-                            "y": 1200
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
             }
           ]
         },
@@ -1279,7 +1406,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "pixilart-drawing(3).png",
+                      "image": "Alien1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1339,7 +1466,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "sr5z9843a01b7aaws3.png",
+                      "image": "galaxy1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1399,7 +1526,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "pixilart-drawing(6).png",
+                      "image": "star1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1459,7 +1586,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "pixilart-drawing(5).png",
+                      "image": "star2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1558,6 +1685,189 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Sh",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Sh.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 6
+                          },
+                          {
+                            "x": 48,
+                            "y": 6
+                          },
+                          {
+                            "x": 48,
+                            "y": 48
+                          },
+                          {
+                            "x": 1,
+                            "y": 48
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "oP",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "oP.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 49,
+                            "y": 0
+                          },
+                          {
+                            "x": 49,
+                            "y": 47
+                          },
+                          {
+                            "x": 0,
+                            "y": 47
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "additive": false,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 90,
+          "emitterForceMax": 85,
+          "emitterForceMin": 45,
+          "flow": 45,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 300,
+          "name": "DashAfterEffect",
+          "particleAlpha1": 204,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 255,
+          "particleBlue2": 0,
+          "particleColor1": "255;255;255",
+          "particleColor2": "0;0;0",
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 255,
+          "particleGreen2": 0,
+          "particleLifeTimeMax": 2.5,
+          "particleLifeTimeMin": 0.5,
+          "particleRed1": 255,
+          "particleRed2": 0,
+          "particleSize1": 100,
+          "particleSize2": 100,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 0,
+          "rendererParam2": 1,
+          "rendererType": "Quad",
+          "tank": -1,
+          "textureParticleName": "firethrust-small4.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 3,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 5,
+          "height": 32,
+          "leftMargin": 5,
+          "name": "Box",
+          "rightMargin": 5,
+          "texture": "box.png",
+          "tiled": false,
+          "topMargin": 5,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -1583,10 +1893,117 @@
           },
           {
             "objectName": "Star2"
+          },
+          {
+            "objectName": "Sh"
+          },
+          {
+            "objectName": "oP"
+          },
+          {
+            "objectName": "DashAfterEffect"
+          },
+          {
+            "objectName": "Box"
           }
         ]
       },
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ParticleSystem::StopEmission"
+              },
+              "parameters": [
+                "DashAfterEffect"
+              ]
+            },
+            {
+              "type": {
+                "value": "ParticleSystem::ZoneRadius"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ParticleSystem::ParticleLifeTimeMax"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "ShipThrust.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterY"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "ShipThrust.CenterY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ParticleSystem::ParticleEmitter::SetMaxParticlesCount"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "30"
+              ]
+            },
+            {
+              "type": {
+                "value": "ParticleSystem::ParticleEmitter::SetParticleRotationMinSpeed"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ParticleSystem::ParticleEmitter::SetParticleRotationMaxSpeed"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "Background",
+                "Resizable",
+                "ScreenWidth() + 180",
+                "ScreenHeight() + 130"
+              ]
+            }
+          ]
+        },
         {
           "colorB": 228,
           "colorG": 176,
@@ -1601,114 +2018,6 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"w\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "ShipThrust",
-                    "Animation",
-                    "=",
-                    "\"Idle\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"a\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "ShipThrust",
-                    "Animation",
-                    "=",
-                    "\"Idle\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"s\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "ShipThrust",
-                    "Animation",
-                    "=",
-                    "\"Idle\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"d\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "ShipThrust",
-                    "Animation",
-                    "=",
-                    "\"Idle\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
                     "value": "KeyFromTextPressed"
                   },
                   "parameters": [
@@ -1736,17 +2045,6 @@
                     "Star1",
                     "-",
                     "0.1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "ShipThrust",
-                    "Animation",
-                    "=",
-                    "\"Thrust\""
                   ]
                 }
               ]
@@ -1784,17 +2082,6 @@
                     "-",
                     "0.1"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "ShipThrust",
-                    "Animation",
-                    "=",
-                    "\"Thrust\""
-                  ]
                 }
               ]
             },
@@ -1830,17 +2117,6 @@
                     "Star1",
                     "+",
                     "0.1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "ShipThrust",
-                    "Animation",
-                    "=",
-                    "\"Thrust\""
                   ]
                 }
               ]
@@ -1878,16 +2154,190 @@
                     "+",
                     "0.1"
                   ]
-                },
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Death Dash Emission",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                    "value": "KeyFromTextPressed"
                   },
                   "parameters": [
-                    "ShipThrust",
-                    "Animation",
-                    "=",
-                    "\"Thrust\""
+                    "",
+                    "\"LShift\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ParticleSystem::StartEmission"
+                  },
+                  "parameters": [
+                    "DashAfterEffect"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"w\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "ShipThrust",
+                        "-",
+                        "20"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "Star1",
+                        "-",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "aiGeneratedEventId": "01K9ZMEZ4T8AG4J8JA4FFW3VXF",
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"a\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "ShipThrust",
+                        "-",
+                        "20"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "Star1",
+                        "-",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "aiGeneratedEventId": "01K9ZMEZ4T8AG4J8JA4FFW3VXF",
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"d\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "ShipThrust",
+                        "+",
+                        "20"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "Star1",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "aiGeneratedEventId": "01K9ZMEZ4T8AG4J8JA4FFW3VXF",
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"s\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "ShipThrust",
+                        "+",
+                        "20"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "Star1",
+                        "+",
+                        "1"
+                      ]
+                    }
                   ]
                 }
               ]
