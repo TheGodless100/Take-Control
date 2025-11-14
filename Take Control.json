@@ -502,6 +502,22 @@
         "name": "mo-big.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "invslot-big.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "invslot-big.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "invslot-small.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "invslot-small.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -533,7 +549,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.24488383633725613,
+        "zoomFactor": 0.29879853636069376,
         "windowMask": false,
         "selectedLayer": "Background"
       },
@@ -1147,14 +1163,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 415,
+          "height": 82,
           "keepRatio": true,
           "layer": "Background",
           "name": "AmmoInventory",
           "persistentUuid": "ef077379-a334-4f78-b230-e19f1c77ecb4",
-          "width": 297,
-          "x": 1624,
-          "y": 666,
+          "width": 298,
+          "x": 1620,
+          "y": 994,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -1170,8 +1186,8 @@
           "name": "Am",
           "persistentUuid": "3835b0a4-34bf-4283-8af9-9df1b6df2e2c",
           "width": 157,
-          "x": 1627,
-          "y": 541,
+          "x": 1630,
+          "y": 880,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -1187,9 +1203,77 @@
           "name": "mo",
           "persistentUuid": "f2fd412e-a209-43e1-bc83-d80e2885a413",
           "width": 157,
-          "x": 1760,
-          "y": 540,
+          "x": 1763,
+          "y": 879,
           "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 67,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Inventory_slot",
+          "persistentUuid": "24c0920d-7427-4d4a-bdc7-85feed38428c",
+          "width": 67,
+          "x": 1624,
+          "y": 1002,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 67,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Inventory_slot",
+          "persistentUuid": "b4da3790-f6c4-4b60-a5a0-2f6791d76bb6",
+          "width": 67,
+          "x": 1698,
+          "y": 1002,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 67,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Inventory_slot",
+          "persistentUuid": "f222a49d-e7b9-43d1-a6d2-fc1c2766abb4",
+          "width": 67,
+          "x": 1772,
+          "y": 1002,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 67,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Inventory_slot",
+          "persistentUuid": "958cc2a6-91b0-40ef-8318-aa541e7d9bad",
+          "width": 67,
+          "x": 1846,
+          "y": 1002,
+          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1968,13 +2052,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ]
@@ -1989,13 +2073,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -2060,13 +2144,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -2120,6 +2204,33 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 20,
+          "height": 32,
+          "leftMargin": 10,
+          "name": "Inventory_slot",
+          "rightMargin": 20,
+          "texture": "invslot-small.png",
+          "tiled": false,
+          "topMargin": 10,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -2166,6 +2277,9 @@
           },
           {
             "objectName": "mo"
+          },
+          {
+            "objectName": "Inventory_slot"
           }
         ]
       },
