@@ -518,6 +518,37 @@
         "name": "invslot-small.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "bullet-small.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bullet-small.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "sr5zfe8b45c206aws3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sr5zfe8b45c206aws3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "bullet-big.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bullet-big.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "HyperliminalSuperposition-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "HyperliminalSuperposition-Regular.ttf",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -549,7 +580,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.29879853636069376,
+        "zoomFactor": 0.47535850871269963,
         "windowMask": false,
         "selectedLayer": "Background"
       },
@@ -1277,6 +1308,40 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 48,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Inventory_bullet",
+          "persistentUuid": "45179f70-f287-43cf-94e6-7ec7070ffc79",
+          "width": 19,
+          "x": 1633,
+          "y": 1012,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 25,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "NewText",
+          "persistentUuid": "b75cdc95-beeb-49a0-85e6-1d594e084d60",
+          "width": 45,
+          "x": 1654,
+          "y": 1028,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -1300,7 +1365,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "bullet.png",
+                      "image": "bullet-small.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1317,19 +1382,19 @@
                         [
                           {
                             "x": 0,
-                            "y": 6
+                            "y": 0
                           },
                           {
-                            "x": 25,
-                            "y": 6
+                            "x": 20,
+                            "y": 0
                           },
                           {
-                            "x": 25,
-                            "y": 19
+                            "x": 20,
+                            "y": 8
                           },
                           {
                             "x": 0,
-                            "y": 19
+                            "y": 8
                           }
                         ]
                       ]
@@ -2231,6 +2296,131 @@
               "useLegacyBottomAndRightAnchors": false
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Inventory_bullet",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bullet-big.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 192,
+                            "y": 0
+                          },
+                          {
+                            "x": 192,
+                            "y": 480
+                          },
+                          {
+                            "x": 0,
+                            "y": 480
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "NewText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "string": "x 30",
+          "font": "HyperliminalSuperposition-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "x 30",
+            "font": "HyperliminalSuperposition-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -2238,6 +2428,9 @@
         "children": [
           {
             "objectName": "bullet"
+          },
+          {
+            "objectName": "Inventory_bullet"
           },
           {
             "objectName": "ShipThrust"
@@ -2280,6 +2473,9 @@
           },
           {
             "objectName": "Inventory_slot"
+          },
+          {
+            "objectName": "NewText"
           }
         ]
       },
@@ -3198,6 +3394,10 @@
         {
           "name": "ScreenWrapPhysics2",
           "type": "ScreenWrap::ScreenWrapPhysics"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     }
