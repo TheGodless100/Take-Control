@@ -612,7 +612,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3411856023473501,
+        "zoomFactor": 0.4027225833325975,
         "windowMask": false,
         "selectedLayer": "Background"
       },
@@ -1385,8 +1385,8 @@
           "name": "OverheatBar",
           "persistentUuid": "9f3610a9-6b4a-4a32-ba90-c98e73f147a1",
           "width": 296,
-          "x": 1583,
-          "y": 846,
+          "x": 1620,
+          "y": 863,
           "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
@@ -2532,7 +2532,18 @@
           "variant": "Blue Flat Bar",
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
           "content": {
             "PreviousHighValueDuration": 0,
             "ShowLabel": false,
@@ -2966,16 +2977,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
               "aiGeneratedEventId": "01KA235EJ1Z0MG8T1J84V6NP2P",
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -3071,7 +3072,7 @@
                       "parameters": [
                         "ShipThrust",
                         "Overheat",
-                        "=",
+                        "<=",
                         "0"
                       ]
                     }
@@ -3079,7 +3080,7 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Cache"
+                        "value": "ParticleSystem::StopEmission"
                       },
                       "parameters": [
                         "DashAfterEffect"
@@ -3098,7 +3099,7 @@
                         "ShipThrust",
                         "Overheat",
                         ">",
-                        "3"
+                        "0"
                       ]
                     }
                   ],
@@ -3133,12 +3134,31 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "KeyFromTextJustPressed"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "",
-                    "\"LShift\""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"LShift\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "ShipThrust",
+                        "Overheat",
+                        "<=",
+                        "0"
+                      ]
+                    }
                   ]
                 }
               ],
@@ -3420,20 +3440,20 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "FireBullet::FireBullet::IsReadyToShoot"
-                  },
-                  "parameters": [
-                    "ShipThrust",
-                    "FireBullet",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "BuiltinCommonInstructions::And"
                   },
                   "parameters": [],
                   "subInstructions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::IsReadyToShoot"
+                      },
+                      "parameters": [
+                        "ShipThrust",
+                        "FireBullet",
+                        ""
+                      ]
+                    },
                     {
                       "type": {
                         "value": "MouseButtonFromTextPressed"
