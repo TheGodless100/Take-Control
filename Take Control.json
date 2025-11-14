@@ -2534,13 +2534,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -2551,8 +2551,8 @@
             "BarBottomPadding": 6,
             "BarLeftPadding": 4,
             "BarRightPadding": 4,
-            "MaxValue": 60,
-            "InitialValue": 60
+            "MaxValue": 96,
+            "InitialValue": 96
           }
         }
       ],
@@ -2999,7 +2999,7 @@
                     "ShipThrust",
                     "Overheat",
                     "-",
-                    "80 * TimeDelta()"
+                    "15 * TimeDelta()"
                   ]
                 }
               ]
@@ -3028,7 +3028,7 @@
                     "ShipThrust",
                     "Overheat",
                     "+",
-                    "0.2 * TimeDelta()"
+                    "20 * TimeDelta()"
                   ]
                 }
               ]
@@ -3046,7 +3046,7 @@
                     "ShipThrust",
                     "Overheat",
                     "=",
-                    "clamp(ShipThrust.Overheat, 0, 60)"
+                    "clamp(ShipThrust.Overheat, 0, 96)"
                   ]
                 },
                 {
@@ -3072,7 +3072,7 @@
                       "parameters": [
                         "ShipThrust",
                         "Overheat",
-                        "<=",
+                        "!=",
                         "0"
                       ]
                     }
@@ -3155,7 +3155,7 @@
                       "parameters": [
                         "ShipThrust",
                         "Overheat",
-                        "<=",
+                        "<",
                         "0"
                       ]
                     }
@@ -3178,8 +3178,8 @@
                   "parameters": [
                     "ShipThrust",
                     "Overheat",
-                    "+",
-                    "0.2"
+                    "=",
+                    "0.1"
                   ]
                 }
               ]
@@ -3225,7 +3225,7 @@
                     "ShipThrust",
                     "Overheat",
                     "-",
-                    "0.2"
+                    "1 * TimeDelta()"
                   ]
                 }
               ],
@@ -3272,7 +3272,7 @@
                       "parameters": [
                         "Star1",
                         "-",
-                        "1"
+                        "1 * TimeDelta()"
                       ]
                     }
                   ]
@@ -3320,7 +3320,7 @@
                       "parameters": [
                         "Star1",
                         "-",
-                        "1"
+                        "1 * TimeDelta()"
                       ]
                     }
                   ]
@@ -3368,7 +3368,7 @@
                       "parameters": [
                         "Star1",
                         "+",
-                        "1"
+                        "1 * TimeDelta()"
                       ]
                     }
                   ]
@@ -3416,7 +3416,7 @@
                       "parameters": [
                         "Star1",
                         "+",
-                        "1"
+                        "1 * TimeDelta()"
                       ]
                     }
                   ]
