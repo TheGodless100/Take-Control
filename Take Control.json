@@ -692,7 +692,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.49138775453294686,
+        "zoomFactor": 0.4448515998886766,
         "windowMask": false,
         "selectedLayer": "Lighting"
       },
@@ -2835,20 +2835,6 @@
               ]
             }
           ]
-        },
-        {
-          "assetStoreId": "",
-          "name": "Light",
-          "type": "Lighting::LightObject",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "radius": 500,
-            "color": "255;228;200",
-            "debugMode": false,
-            "texture": ""
-          }
         }
       ],
       "objectsFolderStructure": {
@@ -2856,9 +2842,6 @@
         "children": [
           {
             "objectName": "bullet"
-          },
-          {
-            "objectName": "Light"
           },
           {
             "objectName": "Inventory_bullet"
@@ -3940,7 +3923,7 @@
                   "parameters": [
                     "Enemy_1",
                     ">=",
-                    "ScreenWidth()+180-(Enemy_1.Width()/2)"
+                    "(ScreenWidth())-(Enemy_1.Width()/2)"
                   ]
                 }
               ],
