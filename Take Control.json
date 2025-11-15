@@ -1475,21 +1475,6 @@
               "BorderLeft": 0,
               "BorderRight": 0,
               "BorderBottom": 0,
-              "TriggerOffset": 0,
-              "AngularVelocity": 0,
-              "LinearVelocityX": 0,
-              "LinearVelocityY": 0
-            },
-            {
-              "name": "ScreenWrapPhysics2",
-              "type": "ScreenWrap::ScreenWrapPhysics",
-              "RequiredPhysicsBehavior": "Physics2",
-              "HorizontalWrapping": true,
-              "VerticalWrapping": true,
-              "BorderTop": 0,
-              "BorderLeft": 0,
-              "BorderRight": 0,
-              "BorderBottom": 0,
               "TriggerOffset": 25,
               "AngularVelocity": 0,
               "LinearVelocityX": 0,
@@ -2450,10 +2435,10 @@
           "effects": [],
           "behaviors": [
             {
-              "leftEdgeAnchor": 2,
               "name": "Anchor",
-              "topEdgeAnchor": 2,
               "type": "AnchorBehavior::AnchorBehavior",
+              "leftEdgeAnchor": 2,
+              "topEdgeAnchor": 2,
               "bottomEdgeAnchor": 2,
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
@@ -2723,13 +2708,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -2775,13 +2760,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -2925,6 +2910,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3066,6 +3052,33 @@
                     "Health",
                     "=",
                     "96"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "aiGeneratedEventId": "01KA42Z6DPDCS369XQ8X25JZ3X",
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetGameResolutionResizeMode"
+                      },
+                      "parameters": [
+                        "",
+                        "\"adaptWidth\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetAdaptGameResolutionAtRuntime"
+                      },
+                      "parameters": [
+                        "",
+                        "yes"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -3914,16 +3927,17 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "aiGeneratedEventId": "01KA4311HM8FTCCQEMHV10A0GQ",
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "CenterX"
+                    "value": "BoundingBoxRight"
                   },
                   "parameters": [
                     "Enemy_1",
                     ">=",
-                    "(ScreenWidth())-(Enemy_1.Width()/2)"
+                    "SceneWindowWidth()"
                   ]
                 }
               ],
@@ -3960,11 +3974,12 @@
               ]
             },
             {
+              "aiGeneratedEventId": "01KA4311HM8FTCCQEMHV10A0GQ",
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "PosX"
+                    "value": "BoundingBoxLeft"
                   },
                   "parameters": [
                     "Enemy_1",
@@ -3979,7 +3994,7 @@
                     "value": "AjoutObjConcern"
                   },
                   "parameters": [
-                    "Enemy_1",
+                    "",
                     "Enemy_1"
                   ]
                 },
@@ -4043,6 +4058,35 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "aiGeneratedEventId": "01KA430R81QXDKXNJ0FQ412CK4",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Background",
+                "Resizable",
+                "=",
+                "SceneWindowWidth()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "Background",
+                "Resizable",
+                "=",
+                "SceneWindowHeight()"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -4261,10 +4305,6 @@
         },
         {
           "name": "ScreenWrapPhysics",
-          "type": "ScreenWrap::ScreenWrapPhysics"
-        },
-        {
-          "name": "ScreenWrapPhysics2",
           "type": "ScreenWrap::ScreenWrapPhysics"
         },
         {
