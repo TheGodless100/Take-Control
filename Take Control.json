@@ -645,6 +645,22 @@
         "name": "stamina-bar-outline-pixilart.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(17).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(17).png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../../../Downloads/pixilart-drawing(17).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\pixilart-drawing(17).png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -676,9 +692,9 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.28905162031349746,
+        "zoomFactor": 0.24488383633726057,
         "windowMask": false,
-        "selectedLayer": "UI"
+        "selectedLayer": "Lighting"
       },
       "objectsGroups": [
         {
@@ -709,6 +725,11 @@
           "name": "Alien_rotation",
           "type": "number",
           "value": -5
+        },
+        {
+          "name": "Alien_index",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -731,23 +752,6 @@
               "value": 0
             }
           ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "c72c2dcf-692f-4369-880b-4b8c2f79c477",
-          "width": 92,
-          "x": 174,
-          "y": 122,
-          "zOrder": 3,
-          "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -875,329 +879,6 @@
           "x": 1245,
           "y": 327,
           "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "d8e7cab5-19c3-4033-8528-557389fec043",
-          "width": 92,
-          "x": 171,
-          "y": 211,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "5b89af66-cac2-4cf2-80a9-d0c88a28c43f",
-          "width": 92,
-          "x": 280,
-          "y": 118,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "b5cfa0a6-2f73-4084-a62b-23d9537e9423",
-          "width": 92,
-          "x": 288,
-          "y": 219,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "24e9f2a4-6ce6-43cd-a771-70d10d0dfd4c",
-          "width": 92,
-          "x": 404,
-          "y": 213,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "2a78d729-99b6-45e3-bdef-f6c4ec157a1b",
-          "width": 92,
-          "x": 513,
-          "y": 120,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "f45f5d96-d9a6-40c8-a3c8-5eb90ef8928c",
-          "width": 92,
-          "x": 407,
-          "y": 124,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "fba6928e-8cdd-4ba8-8645-f43f16a5eb64",
-          "width": 92,
-          "x": 521,
-          "y": 221,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "43ccac27-0449-4162-9d76-bf8e14840221",
-          "width": 92,
-          "x": 627,
-          "y": 218,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "e5ca8e75-4619-452a-b518-e2169c9fb489",
-          "width": 92,
-          "x": 736,
-          "y": 125,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "81763e25-a18a-4fde-999a-c80dae18324b",
-          "width": 92,
-          "x": 630,
-          "y": 129,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "3844bbfa-f5e3-46b4-aaaf-0f9a6128430c",
-          "width": 92,
-          "x": 744,
-          "y": 226,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "87e868a3-a3f3-4fe4-a75e-f399ec493f02",
-          "width": 92,
-          "x": 852,
-          "y": 220,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "69247fa9-ab4b-4ff5-9c84-17b138c70e9c",
-          "width": 92,
-          "x": 961,
-          "y": 127,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "2035771d-3ca3-4f66-b246-420383f7883e",
-          "width": 92,
-          "x": 855,
-          "y": 131,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "f25add5f-98aa-4a81-88c2-f015d97f1e3b",
-          "width": 92,
-          "x": 969,
-          "y": 228,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "56738a59-a63f-475c-bfbc-a75c53c8baf7",
-          "width": 92,
-          "x": 1073,
-          "y": 226,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "c274195a-bf66-4107-bc94-9bb3c6e7f2ea",
-          "width": 92,
-          "x": 1182,
-          "y": 133,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "4e671a25-025b-4f8a-a80a-6d99947efd29",
-          "width": 92,
-          "x": 1076,
-          "y": 137,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 92,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy_1",
-          "persistentUuid": "af570b08-1653-409a-8583-f2e5c7f6e5dc",
-          "width": 92,
-          "x": 1171,
-          "y": 226,
-          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1539,6 +1220,56 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 83,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Inventory_bullet_2",
+          "persistentUuid": "b50f46bb-c755-47fc-9201-d345b6daafd7",
+          "width": 83,
+          "x": 1675,
+          "y": 997,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Quantity_of_ammo",
+          "persistentUuid": "2eb99578-0a27-4807-8281-6c8aee61dcb6",
+          "width": 0,
+          "x": 1730,
+          "y": 1027,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 701,
+          "keepRatio": true,
+          "layer": "Lighting",
+          "name": "Light",
+          "persistentUuid": "e7bbea0e-9e3e-4516-8051-913cacc3ba0e",
+          "width": 840,
+          "x": 564,
+          "y": 512,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -1553,7 +1284,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "idle",
+              "name": "bullet1",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1563,6 +1294,54 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "bullet-small.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 20,
+                            "y": 0
+                          },
+                          {
+                            "x": 20,
+                            "y": 8
+                          },
+                          {
+                            "x": 0,
+                            "y": 8
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bullet2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "..\\..\\..\\Downloads\\pixilart-drawing(17).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1612,7 +1391,7 @@
             {
               "name": "Overheat",
               "type": "number",
-              "value": 60
+              "value": 96
             }
           ],
           "effects": [],
@@ -2965,7 +2744,7 @@
               "useLegacyBottomAndRightAnchors": false
             }
           ],
-          "string": "16/16",
+          "string": "96/96",
           "font": "HyperliminalSuperposition-Regular.ttf",
           "textAlignment": "left",
           "characterSize": 20,
@@ -2988,13 +2767,98 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "16/16",
+            "text": "96/96",
             "font": "HyperliminalSuperposition-Regular.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
             "characterSize": 20,
             "lineHeight": 0,
             "color": "0;0;0"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Inventory_bullet_2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pixilart-drawing(17).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 19,
+                            "y": 8
+                          },
+                          {
+                            "x": 30,
+                            "y": 8
+                          },
+                          {
+                            "x": 30,
+                            "y": 40
+                          },
+                          {
+                            "x": 19,
+                            "y": 40
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Light",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 500,
+            "color": "255;228;200",
+            "debugMode": false,
+            "texture": ""
           }
         }
       ],
@@ -3005,7 +2869,13 @@
             "objectName": "bullet"
           },
           {
+            "objectName": "Light"
+          },
+          {
             "objectName": "Inventory_bullet"
+          },
+          {
+            "objectName": "Inventory_bullet_2"
           },
           {
             "objectName": "ShipThrust"
@@ -3078,7 +2948,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "At the start",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3204,6 +3073,72 @@
                     "Animation",
                     "=",
                     "\"Idle\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Alien_index",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Alien_index",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Alien_index",
+                    "<=",
+                    "20"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Enemy_1",
+                    "170 + 200*(mod(Alien_index, 5)+1)",
+                    "120 + 100*(mod(Alien_index, 2)+1)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "Resizable",
+                    "100",
+                    "100"
                   ]
                 }
               ]
@@ -3569,6 +3504,17 @@
                     "ShipThrust.Overheat",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Stamina",
+                    "Text",
+                    "=",
+                    "ToString(floor(ShipThrust.Overheat)) + \"/96\""
+                  ]
                 }
               ]
             },
@@ -3896,7 +3842,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Shooting",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3940,7 +3885,7 @@
                   "parameters": [
                     "ShipThrust",
                     "FireBullet",
-                    "\"bullet\"",
+                    "",
                     "1"
                   ]
                 },
@@ -3981,7 +3926,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Enemies Handling",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4173,31 +4117,20 @@
           ]
         },
         {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
+          "ambientLightColorB": 128,
+          "ambientLightColorG": 128,
+          "ambientLightColorR": 128,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
           "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
+          "followBaseLayerCamera": true,
+          "isLightingLayer": true,
           "isLocked": false,
-          "name": "",
+          "name": "Lighting",
           "renderingType": "",
           "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
+          "cameras": [],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
@@ -4247,10 +4180,21 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "bullet",
+          "name": "",
           "renderingType": "",
           "visibility": true,
-          "cameras": [],
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
@@ -4341,6 +4285,23 @@
               }
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Lighting2",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
