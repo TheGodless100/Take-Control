@@ -661,6 +661,66 @@
         "name": "..\\..\\..\\Downloads\\pixilart-drawing(17).png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Bullet_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bullet_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Projectile/7d45ec6b8167ff51f593ad1546b9c5a0665f0efa16e8b02c8d236a23a9836bed_Bullet_1.png",
+          "name": "Bullet_1.png"
+        }
+      },
+      {
+        "file": "assets/Bullet_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bullet_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Projectile/7d45ec6b8167ff51f593ad1546b9c5a0665f0efa16e8b02c8d236a23a9836bed_Bullet_2.png",
+          "name": "Bullet_2.png"
+        }
+      },
+      {
+        "file": "assets/Bullet_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bullet_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Projectile/793d60a2638c20454c88c686e3a82c16b1f393b5a0e866b57f326602fb07e047_Bullet_3.png",
+          "name": "Bullet_3.png"
+        }
+      },
+      {
+        "file": "assets/Bullet_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bullet_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Projectile/793d60a2638c20454c88c686e3a82c16b1f393b5a0e866b57f326602fb07e047_Bullet_4.png",
+          "name": "Bullet_4.png"
+        }
+      },
+      {
+        "file": "assets/Bullet_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bullet_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Projectile/7eb0d6cb3f9fa3e225654086703329525413321a2233cd4548551f21426e9caf_Bullet_5.png",
+          "name": "Bullet_5.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -692,7 +752,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.31928945896902483,
+        "zoomFactor": 0.5610952083582218,
         "windowMask": false,
         "selectedLayer": "Lighting"
       },
@@ -1410,6 +1470,12 @@
               "RandomizedAngle": 0
             },
             {
+              "cost": 2,
+              "impassable": true,
+              "name": "PathfindingObstacle",
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+            },
+            {
               "name": "Physics2",
               "type": "Physics2::Physics2Behavior",
               "bodyType": "Dynamic",
@@ -1630,7 +1696,60 @@
             }
           ],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "FireBullet",
+              "type": "FireBullet::FireBullet",
+              "FireCooldown": 0.1,
+              "HasJustFired": false,
+              "RotateBullet": true,
+              "FiringArc": 45,
+              "BulletQuantity": 1,
+              "AngleVariance": 0,
+              "BulletSpeedVariance": 0,
+              "AmmoQuantity": 0,
+              "ShotsPerReload": 0,
+              "ReloadDuration": 1,
+              "MaxAmmo": 0,
+              "ShotsBeforeNextReload": 0,
+              "TotalShotsFired": 0,
+              "TotalBulletsCreated": 0,
+              "StartingAmmo": 0,
+              "TotalReloadsCompleted": 0,
+              "UnlimitedAmmo": true,
+              "ReloadInProgress": false,
+              "HeatIncreasePerShot": 0,
+              "HeatLevel": 0,
+              "AutomaticReloading": true,
+              "OverheatDuration": 0,
+              "LinearCoolingRate": 0.1,
+              "ExponentialCoolingRate": 0.3,
+              "BulletLayer": "",
+              "RandomizedAngle": 0
+            },
+            {
+              "acceleration": 400,
+              "allowDiagonals": true,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "cellHeight": 20,
+              "cellWidth": 20,
+              "extraBorder": 0,
+              "gridOffsetX": 0,
+              "gridOffsetY": 0,
+              "maxSpeed": 200,
+              "name": "Pathfinding",
+              "rotateObject": true,
+              "smoothingMaxCellGap": 1,
+              "type": "PathfindingBehavior::PathfindingBehavior"
+            },
+            {
+              "cost": 2,
+              "impassable": true,
+              "name": "PathfindingObstacle",
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -2820,6 +2939,217 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "9bd6af494249f31e5848cb0030e2263114bfc332e5fba7f09413e9770bc42fb4",
+          "name": "EnemyBullet",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "extraBorder": 200,
+              "name": "DestroyOutside",
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "unseenGraceDistance": 10000
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.25,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Bullet_1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 43,
+                            "y": 0
+                          },
+                          {
+                            "x": 43,
+                            "y": 35
+                          },
+                          {
+                            "x": 0,
+                            "y": 35
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Bullet_2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 43,
+                            "y": 0
+                          },
+                          {
+                            "x": 43,
+                            "y": 35
+                          },
+                          {
+                            "x": 0,
+                            "y": 35
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Bullet_3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 43,
+                            "y": 0
+                          },
+                          {
+                            "x": 43,
+                            "y": 35
+                          },
+                          {
+                            "x": 0,
+                            "y": 35
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Bullet_4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 43,
+                            "y": 0
+                          },
+                          {
+                            "x": 43,
+                            "y": 35
+                          },
+                          {
+                            "x": 0,
+                            "y": 35
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Bullet_5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 43,
+                            "y": 0
+                          },
+                          {
+                            "x": 43,
+                            "y": 35
+                          },
+                          {
+                            "x": 0,
+                            "y": 35
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -2896,6 +3226,9 @@
           },
           {
             "objectName": "supesokitsune_tails"
+          },
+          {
+            "objectName": "EnemyBullet"
           }
         ]
       },
@@ -4021,37 +4354,31 @@
               ]
             },
             {
+              "aiGeneratedEventId": "01KA4BQ6AY3WK4H1TV3HSQXZFW",
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "value": "MettreX"
+                    "value": "PathfindingBehavior::SetDestination"
                   },
                   "parameters": [
                     "Enemy_1",
-                    "+",
-                    "Alien_rotation"
+                    "Pathfinding",
+                    "",
+                    "ShipThrust.X()",
+                    "ShipThrust.Y()"
                   ]
                 },
                 {
                   "type": {
-                    "value": "SetCenterX"
+                    "value": "RotateTowardObject"
                   },
                   "parameters": [
-                    "DashAfterEffect",
-                    "=",
-                    "ShipThrust.CenterX()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetCenterY"
-                  },
-                  "parameters": [
-                    "DashAfterEffect",
-                    "=",
-                    "ShipThrust.CenterY()"
+                    "Enemy_1",
+                    "ShipThrust",
+                    "0",
+                    ""
                   ]
                 }
               ]
@@ -4084,6 +4411,68 @@
                 "Resizable",
                 "=",
                 "SceneWindowHeight()"
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01KA4BQ6AY3WK4H1TV3HSQXZFW",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::IsReadyToShoot"
+              },
+              "parameters": [
+                "Enemy_1",
+                "FireBullet",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "Enemy_1",
+                "FireBullet",
+                "Enemy_1.CenterX()",
+                "Enemy_1.CenterY()",
+                "EnemyBullet",
+                "ShipThrust",
+                "300",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01KA4BQ6AY3WK4H1TV3HSQXZFW",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "EnemyBullet",
+                "ShipThrust",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "EnemyBullet",
+                ""
               ]
             }
           ]
@@ -4285,6 +4674,14 @@
         {
           "name": "Opacity",
           "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        },
+        {
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
         },
         {
           "name": "Physics2",
