@@ -721,6 +721,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Projectile/7eb0d6cb3f9fa3e225654086703329525413321a2233cd4548551f21426e9caf_Bullet_5.png",
           "name": "Bullet_5.png"
         }
+      },
+      {
+        "file": "health bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "health bar.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -752,7 +760,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5610952083582218,
+        "zoomFactor": 0.17576384491805858,
         "windowMask": false,
         "selectedLayer": "Lighting"
       },
@@ -781,6 +789,16 @@
         }
       ],
       "variables": [
+        {
+          "name": "ShopOpen",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "EnemyCount",
+          "type": "number",
+          "value": 0
+        },
         {
           "name": "Alien_rotation",
           "type": "number",
@@ -1033,8 +1051,9 @@
           "depth": 6,
           "height": 282,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "Head_Supesokitshune",
+          "opacity": 0,
           "persistentUuid": "28fc93c5-1d88-4d01-9330-46c24041c5cc",
           "width": 282,
           "x": 750,
@@ -1050,8 +1069,9 @@
           "depth": 10,
           "height": 238,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "supesokitsune_body",
+          "opacity": 0,
           "persistentUuid": "c49ad0d4-6143-489e-bccb-eb424d7994e3",
           "width": 475,
           "x": 853,
@@ -1067,8 +1087,9 @@
           "depth": 7,
           "height": 311,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "supesokitsune_leg",
+          "opacity": 0,
           "persistentUuid": "be48b468-f59b-408a-bbe8-528131d4f5d3",
           "width": 311,
           "x": 1078,
@@ -1084,8 +1105,9 @@
           "depth": 7,
           "height": 332,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "supesokitsune_leg",
+          "opacity": 0,
           "persistentUuid": "913ee576-c0d8-437c-9cc3-0113b26d038e",
           "width": 332,
           "x": 773,
@@ -1101,8 +1123,9 @@
           "depth": 10,
           "height": 472,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "supesokitsune_tails",
+          "opacity": 0,
           "persistentUuid": "176795be-b86d-4a9c-b9b8-22125a48c5f5",
           "width": 472,
           "x": 1212,
@@ -1134,7 +1157,7 @@
           "depth": 2,
           "height": 157,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "mo",
           "persistentUuid": "4170ac1c-e217-49f9-9a82-d39cc1fda98e",
           "width": 157,
@@ -1151,7 +1174,7 @@
           "depth": 2,
           "height": 157,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "Am",
           "persistentUuid": "b18c5695-6867-48e3-a920-bd216d176855",
           "width": 157,
@@ -1168,7 +1191,7 @@
           "depth": 3,
           "height": 67,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "Inventory_slot",
           "persistentUuid": "bea83e47-2782-4169-9346-51635aca44e9",
           "width": 67,
@@ -1185,29 +1208,29 @@
           "depth": 1,
           "height": 25,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "Quantity_of_ammo",
           "persistentUuid": "bd48310b-9edb-4e60-ac96-45c15250d2ef",
-          "width": 45,
-          "x": 1653,
-          "y": 1030,
+          "width": 50,
+          "x": 1633,
+          "y": 1037,
           "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
-          "angle": 0,
+          "angle": 90,
           "customSize": true,
           "depth": 0,
           "height": 48,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "Inventory_bullet",
           "persistentUuid": "f7ef378e-14df-4b5f-aa79-19e50c5d95bc",
           "width": 19,
-          "x": 1632,
-          "y": 1014,
+          "x": 1648,
+          "y": 997,
           "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
@@ -1219,7 +1242,7 @@
           "depth": 3,
           "height": 67,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "Inventory_slot",
           "persistentUuid": "d482033b-7713-4283-b3ab-cb795f52687a",
           "width": 67,
@@ -1236,7 +1259,7 @@
           "depth": 3,
           "height": 67,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "Inventory_slot",
           "persistentUuid": "1291054e-c5c0-4a7b-900c-54ad291032eb",
           "width": 67,
@@ -1253,7 +1276,7 @@
           "depth": 3,
           "height": 67,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "Inventory_slot",
           "persistentUuid": "8013fb22-7589-438c-962a-42cda9984229",
           "width": 67,
@@ -1270,7 +1293,7 @@
           "depth": 1,
           "height": 82,
           "keepRatio": true,
-          "layer": "Background",
+          "layer": "UI",
           "name": "AmmoInventory",
           "persistentUuid": "95fc2a55-af38-49ed-87f0-cc77e27cc3a9",
           "width": 298,
@@ -1282,7 +1305,7 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
+          "angle": 90,
           "customSize": true,
           "depth": 2,
           "height": 83,
@@ -1291,8 +1314,8 @@
           "name": "Inventory_bullet_2",
           "persistentUuid": "b50f46bb-c755-47fc-9201-d345b6daafd7",
           "width": 83,
-          "x": 1675,
-          "y": 997,
+          "x": 1690,
+          "y": 980,
           "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
@@ -1307,9 +1330,25 @@
           "name": "Quantity_of_ammo",
           "persistentUuid": "2eb99578-0a27-4807-8281-6c8aee61dcb6",
           "width": 0,
-          "x": 1730,
-          "y": 1027,
+          "x": 1710,
+          "y": 1038,
           "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 84.57142857142858,
+          "height": 34,
+          "layer": "UI",
+          "name": "Health",
+          "persistentUuid": "54d1506c-e6e4-4beb-b768-0b3f16889ef9",
+          "width": 296,
+          "x": 1620,
+          "y": 847,
+          "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1435,6 +1474,11 @@
               "name": "Overheat",
               "type": "number",
               "value": 96
+            },
+            {
+              "name": "Health",
+              "type": "number",
+              "value": 96
             }
           ],
           "effects": [],
@@ -1470,10 +1514,10 @@
               "RandomizedAngle": 0
             },
             {
-              "cost": 2,
-              "impassable": true,
               "name": "PathfindingObstacle",
-              "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 2,
+              "impassable": true
             },
             {
               "name": "Physics2",
@@ -1690,6 +1734,16 @@
           "updateIfNotVisible": false,
           "variables": [
             {
+              "name": "RandomReloadDuration",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "RandomFireCooldown",
+              "type": "number",
+              "value": 0
+            },
+            {
               "name": "Health",
               "type": "number",
               "value": 96
@@ -1700,7 +1754,7 @@
             {
               "name": "FireBullet",
               "type": "FireBullet::FireBullet",
-              "FireCooldown": 0.1,
+              "FireCooldown": 0.5,
               "HasJustFired": false,
               "RotateBullet": true,
               "FiringArc": 45,
@@ -1708,8 +1762,8 @@
               "AngleVariance": 0,
               "BulletSpeedVariance": 0,
               "AmmoQuantity": 0,
-              "ShotsPerReload": 0,
-              "ReloadDuration": 1,
+              "ShotsPerReload": 5,
+              "ReloadDuration": 3,
               "MaxAmmo": 0,
               "ShotsBeforeNextReload": 0,
               "TotalShotsFired": 0,
@@ -1728,6 +1782,8 @@
               "RandomizedAngle": 0
             },
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -1738,16 +1794,14 @@
               "gridOffsetX": 0,
               "gridOffsetY": 0,
               "maxSpeed": 200,
-              "name": "Pathfinding",
               "rotateObject": true,
-              "smoothingMaxCellGap": 1,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "smoothingMaxCellGap": 1
             },
             {
-              "cost": 2,
-              "impassable": true,
               "name": "PathfindingObstacle",
-              "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 2,
+              "impassable": true
             }
           ],
           "animations": [
@@ -2950,9 +3004,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 200,
               "name": "DestroyOutside",
               "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 200,
               "unseenGraceDistance": 10000
             }
           ],
@@ -3000,156 +3054,42 @@
                           }
                         ]
                       ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Bullet_2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 43,
-                            "y": 0
-                          },
-                          {
-                            "x": 43,
-                            "y": 35
-                          },
-                          {
-                            "x": 0,
-                            "y": 35
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Bullet_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 43,
-                            "y": 0
-                          },
-                          {
-                            "x": 43,
-                            "y": 35
-                          },
-                          {
-                            "x": 0,
-                            "y": 35
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Bullet_4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 43,
-                            "y": 0
-                          },
-                          {
-                            "x": 43,
-                            "y": 35
-                          },
-                          {
-                            "x": 0,
-                            "y": 35
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Bullet_5.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 43,
-                            "y": 0
-                          },
-                          {
-                            "x": 43,
-                            "y": 35
-                          },
-                          {
-                            "x": 0,
-                            "y": 35
-                          }
-                        ]
-                      ]
                     }
                   ]
                 }
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "0a398f1656e34f64758c909a71ca17cd69fd41bd251d89ff5a640303c4279f50",
+          "name": "Health",
+          "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+          "variant": "Health",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "content": {
+            "PreviousHighValueDuration": 0,
+            "ShowLabel": true,
+            "BarTopPadding": 4,
+            "BarBottomPadding": 6,
+            "BarLeftPadding": 4,
+            "BarRightPadding": 4,
+            "MaxValue": 96,
+            "InitialValue": 96
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -3229,6 +3169,9 @@
           },
           {
             "objectName": "EnemyBullet"
+          },
+          {
+            "objectName": "Health"
           }
         ]
       },
@@ -3243,7 +3186,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3386,6 +3328,18 @@
                     "=",
                     "96"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::SetCooldownOp"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "FireBullet",
+                    "=",
+                    "1",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -3410,6 +3364,54 @@
                       "parameters": [
                         "",
                         "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "aiGeneratedEventId": "01KA4SEHS02JQ3YVK57596QM4X",
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Enemy_1",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Enemy_1",
+                        "RandomFireCooldown",
+                        "=",
+                        "RandomFloatInRange(0.5, 2)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Enemy_1",
+                        "RandomReloadDuration",
+                        "=",
+                        "RandomFloatInRange(2, 5)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Enemy_1",
+                        "\"FireTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Enemy_1",
+                        "\"ReloadTimer\""
                       ]
                     }
                   ]
@@ -4352,36 +4354,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "aiGeneratedEventId": "01KA4BQ6AY3WK4H1TV3HSQXZFW",
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PathfindingBehavior::SetDestination"
-                  },
-                  "parameters": [
-                    "Enemy_1",
-                    "Pathfinding",
-                    "",
-                    "ShipThrust.X()",
-                    "ShipThrust.Y()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "RotateTowardObject"
-                  },
-                  "parameters": [
-                    "Enemy_1",
-                    "ShipThrust",
-                    "0",
-                    ""
-                  ]
-                }
-              ]
             }
           ],
           "parameters": []
@@ -4412,6 +4384,26 @@
                 "=",
                 "SceneWindowHeight()"
               ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "ShipThrust.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterY"
+              },
+              "parameters": [
+                "DashAfterEffect",
+                "=",
+                "ShipThrust.CenterY()"
+              ]
             }
           ]
         },
@@ -4433,7 +4425,7 @@
           "actions": [
             {
               "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
+                "value": "FireBullet::FireBullet::Fire"
               },
               "parameters": [
                 "Enemy_1",
@@ -4441,7 +4433,7 @@
                 "Enemy_1.CenterX()",
                 "Enemy_1.CenterY()",
                 "EnemyBullet",
-                "ShipThrust",
+                "90",
                 "300",
                 ""
               ]
@@ -4449,7 +4441,7 @@
           ]
         },
         {
-          "aiGeneratedEventId": "01KA4BQ6AY3WK4H1TV3HSQXZFW",
+          "aiGeneratedEventId": "01KA4SEHS02JQ3YVK57596QM4X",
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4473,6 +4465,281 @@
               "parameters": [
                 "EnemyBullet",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "ShipThrust",
+                "Health",
+                "-",
+                "10"
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01KA4SEHS02JQ3YVK57596QM4X",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Enemy_1",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Enemy_1",
+                "\"FireTimer\"",
+                ">=",
+                "Enemy_1.RandomFireCooldown"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "Enemy_1",
+                "FireBullet",
+                "Enemy_1.CenterX()",
+                "Enemy_1.CenterY()",
+                "EnemyBullet",
+                "ShipThrust",
+                "300",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Enemy_1",
+                "\"FireTimer\""
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01KA4SEHS02JQ3YVK57596QM4X",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Enemy_1",
+          "conditions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::ShotsBeforeNextReload"
+              },
+              "parameters": [
+                "Enemy_1",
+                "FireBullet",
+                "=",
+                "0",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "\"ReloadTimer\"",
+                    ">=",
+                    "Enemy_1.RandomReloadDuration"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::ReloadAmmo"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "FireBullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "\"ReloadTimer\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01KA4SJSMWTRC9Q4KQBCT69WFR",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemy_1",
+                "bullet",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "bullet",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Enemy_1",
+                "Health",
+                "-",
+                "20"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "Health",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "EnemyCount",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01KA4SM486WZJ91EGSSQW3E8K8",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "EnemyCount",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "ShopOpen",
+                "false",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "Head_Supesokitshune",
+                "Opacity",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "supesokitsune_body",
+                "Opacity",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "supesokitsune_leg",
+                "Opacity",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "supesokitsune_tails",
+                "Opacity",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ShopOpen",
+                "True",
+                "true"
               ]
             }
           ]
@@ -14604,6 +14871,265 @@
             }
           ],
           "variants": [
+            {
+              "areaMaxX": 224,
+              "areaMaxY": 34,
+              "areaMaxZ": 64,
+              "areaMinX": 0,
+              "areaMinY": 0,
+              "areaMinZ": 0,
+              "name": "Health",
+              "objects": [
+                {
+                  "assetStoreId": "",
+                  "bold": true,
+                  "italic": false,
+                  "name": "Label",
+                  "smoothed": true,
+                  "type": "TextObject::Text",
+                  "underlined": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ],
+                  "string": "8 / 16",
+                  "font": "HyperliminalSuperposition-Regular.ttf",
+                  "textAlignment": "center",
+                  "characterSize": 16,
+                  "color": {
+                    "b": 0,
+                    "g": 0,
+                    "r": 0
+                  },
+                  "content": {
+                    "bold": true,
+                    "isOutlineEnabled": false,
+                    "isShadowEnabled": false,
+                    "italic": false,
+                    "outlineColor": "255;255;255",
+                    "outlineThickness": 2,
+                    "shadowAngle": 90,
+                    "shadowBlurRadius": 2,
+                    "shadowColor": "0;0;0",
+                    "shadowDistance": 4,
+                    "shadowOpacity": 127,
+                    "smoothed": true,
+                    "underlined": false,
+                    "text": "8 / 16",
+                    "font": "HyperliminalSuperposition-Regular.ttf",
+                    "textAlignment": "center",
+                    "verticalTextAlignment": "center",
+                    "characterSize": 16,
+                    "lineHeight": 0,
+                    "color": "0;0;0"
+                  }
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 0,
+                  "height": 24,
+                  "leftMargin": 0,
+                  "name": "FillBar",
+                  "rightMargin": 0,
+                  "texture": "health bar.png",
+                  "tiled": false,
+                  "topMargin": 0,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 24,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "ResourceBar",
+                      "type": "PanelSpriteContinuousBar::ResourceBar",
+                      "Value": 1,
+                      "MaxValue": 3,
+                      "PreviousValue": 0,
+                      "CurrentValue": 1
+                    },
+                    {
+                      "name": "Tween",
+                      "type": "Tween::TweenBehavior"
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 0,
+                  "height": 24,
+                  "leftMargin": 0,
+                  "name": "Buffer",
+                  "rightMargin": 0,
+                  "texture": "health bar.png",
+                  "tiled": false,
+                  "topMargin": 0,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 24,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "Tween",
+                      "type": "Tween::TweenBehavior"
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 6,
+                  "height": 34,
+                  "leftMargin": 4,
+                  "name": "Background",
+                  "rightMargin": 4,
+                  "texture": "stamina1.png",
+                  "tiled": false,
+                  "topMargin": 6,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 224,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ]
+                }
+              ],
+              "objectsFolderStructure": {
+                "folderName": "__ROOT",
+                "children": [
+                  {
+                    "objectName": "Label"
+                  },
+                  {
+                    "objectName": "FillBar"
+                  },
+                  {
+                    "objectName": "Buffer"
+                  },
+                  {
+                    "objectName": "Background"
+                  }
+                ]
+              },
+              "objectsGroups": [],
+              "layers": [
+                {
+                  "ambientLightColorB": 200,
+                  "ambientLightColorG": 200,
+                  "ambientLightColorR": 200,
+                  "camera3DFarPlaneDistance": 10000,
+                  "camera3DFieldOfView": 45,
+                  "camera3DNearPlaneDistance": 3,
+                  "cameraType": "",
+                  "followBaseLayerCamera": false,
+                  "isLightingLayer": false,
+                  "isLocked": false,
+                  "name": "",
+                  "renderingType": "",
+                  "visibility": true,
+                  "cameras": [
+                    {
+                      "defaultSize": true,
+                      "defaultViewport": true,
+                      "height": 0,
+                      "viewportBottom": 1,
+                      "viewportLeft": 0,
+                      "viewportRight": 1,
+                      "viewportTop": 0,
+                      "width": 0
+                    }
+                  ],
+                  "effects": []
+                }
+              ],
+              "instances": [
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 24,
+                  "layer": "",
+                  "name": "Background",
+                  "persistentUuid": "24882334-eec8-403e-8bf1-70fc928a46e6",
+                  "width": 217,
+                  "x": 5,
+                  "y": 5,
+                  "zOrder": 4,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 24,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "FillBar",
+                  "persistentUuid": "87afe7bc-6a5d-44e4-9e77-ec116d1a1593",
+                  "width": 216,
+                  "x": 5,
+                  "y": 5,
+                  "zOrder": 2,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                }
+              ],
+              "editionSettings": {
+                "grid": false,
+                "gridType": "rectangular",
+                "gridWidth": 32,
+                "gridHeight": 32,
+                "gridOffsetX": 0,
+                "gridOffsetY": 0,
+                "gridColor": 10401023,
+                "gridAlpha": 0.8,
+                "snap": false,
+                "zoomFactor": 2.7367667911630083,
+                "windowMask": false,
+                "selectedLayer": ""
+              }
+            },
             {
               "areaMaxX": 224,
               "areaMaxY": 34,
