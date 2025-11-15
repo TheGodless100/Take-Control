@@ -581,6 +581,70 @@
         "name": "firenothrust.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "supesokitsune-head_scaled_9x_pngcrushed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "supesokitsune-head_scaled_9x_pngcrushed.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "supesokitsune-head.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "supesokitsune-head.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "supesokitsune.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "supesokitsune.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "supesokitsune-body.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "supesokitsune-body.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "supesokitsune-leg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "supesokitsune-leg.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(15).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(15).png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "stamina1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "stamina1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "stamina-bar-outline-pixilart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "stamina-bar-outline-pixilart.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -612,9 +676,9 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4027225833325975,
+        "zoomFactor": 0.28905162031349746,
         "windowMask": false,
-        "selectedLayer": "Background"
+        "selectedLayer": "UI"
       },
       "objectsGroups": [
         {
@@ -1148,9 +1212,9 @@
           "name": "Background",
           "persistentUuid": "aec1469a-1ec0-444f-b5b5-d49c07fee7a3",
           "width": 1955,
-          "x": 0,
-          "y": 0,
-          "zOrder": 4,
+          "x": -12,
+          "y": -1,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1174,23 +1238,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 1,
-          "height": 332,
-          "keepRatio": true,
-          "layer": "Background",
-          "name": "Box",
-          "persistentUuid": "1b1bf96a-bd00-4bd0-b0e5-4c1bb3eeeab5",
-          "width": 563,
-          "x": 34,
-          "y": -499,
-          "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "depth": 6,
           "height": 309,
           "keepRatio": true,
@@ -1198,8 +1245,8 @@
           "name": "Sh",
           "persistentUuid": "a6bd1ddf-6ba9-49d9-9c37-6249f4f6021c",
           "width": 309,
-          "x": 35,
-          "y": -497,
+          "x": 835,
+          "y": -832,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -1215,162 +1262,9 @@
           "name": "oP",
           "persistentUuid": "8a7efaf2-f20c-4858-aead-5fa60a054df4",
           "width": 291,
-          "x": 346,
-          "y": -484,
+          "x": 1146,
+          "y": -819,
           "zOrder": 17,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 82,
-          "keepRatio": true,
-          "layer": "Background",
-          "name": "AmmoInventory",
-          "persistentUuid": "ef077379-a334-4f78-b230-e19f1c77ecb4",
-          "width": 298,
-          "x": 1620,
-          "y": 994,
-          "zOrder": 18,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2,
-          "height": 157,
-          "keepRatio": true,
-          "layer": "Background",
-          "name": "Am",
-          "persistentUuid": "3835b0a4-34bf-4283-8af9-9df1b6df2e2c",
-          "width": 157,
-          "x": 1630,
-          "y": 880,
-          "zOrder": 19,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2,
-          "height": 157,
-          "keepRatio": true,
-          "layer": "Background",
-          "name": "mo",
-          "persistentUuid": "f2fd412e-a209-43e1-bc83-d80e2885a413",
-          "width": 157,
-          "x": 1763,
-          "y": 879,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 3,
-          "height": 67,
-          "keepRatio": true,
-          "layer": "Background",
-          "name": "Inventory_slot",
-          "persistentUuid": "24c0920d-7427-4d4a-bdc7-85feed38428c",
-          "width": 67,
-          "x": 1624,
-          "y": 1002,
-          "zOrder": 21,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 3,
-          "height": 67,
-          "keepRatio": true,
-          "layer": "Background",
-          "name": "Inventory_slot",
-          "persistentUuid": "b4da3790-f6c4-4b60-a5a0-2f6791d76bb6",
-          "width": 67,
-          "x": 1698,
-          "y": 1002,
-          "zOrder": 21,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 3,
-          "height": 67,
-          "keepRatio": true,
-          "layer": "Background",
-          "name": "Inventory_slot",
-          "persistentUuid": "f222a49d-e7b9-43d1-a6d2-fc1c2766abb4",
-          "width": 67,
-          "x": 1772,
-          "y": 1002,
-          "zOrder": 21,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 3,
-          "height": 67,
-          "keepRatio": true,
-          "layer": "Background",
-          "name": "Inventory_slot",
-          "persistentUuid": "958cc2a6-91b0-40ef-8318-aa541e7d9bad",
-          "width": 67,
-          "x": 1846,
-          "y": 1002,
-          "zOrder": 21,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 48,
-          "keepRatio": true,
-          "layer": "Background",
-          "name": "Inventory_bullet",
-          "persistentUuid": "45179f70-f287-43cf-94e6-7ec7070ffc79",
-          "width": 19,
-          "x": 1633,
-          "y": 1012,
-          "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 25,
-          "keepRatio": true,
-          "layer": "Background",
-          "name": "NewText",
-          "persistentUuid": "b75cdc95-beeb-49a0-85e6-1d594e084d60",
-          "width": 45,
-          "x": 1654,
-          "y": 1028,
-          "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1386,8 +1280,262 @@
           "persistentUuid": "9f3610a9-6b4a-4a32-ba90-c98e73f147a1",
           "width": 296,
           "x": 1620,
-          "y": 863,
+          "y": 877,
           "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 6,
+          "height": 282,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Head_Supesokitshune",
+          "persistentUuid": "28fc93c5-1d88-4d01-9330-46c24041c5cc",
+          "width": 282,
+          "x": 750,
+          "y": -611,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 10,
+          "height": 238,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "supesokitsune_body",
+          "persistentUuid": "c49ad0d4-6143-489e-bccb-eb424d7994e3",
+          "width": 475,
+          "x": 853,
+          "y": -484,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 336,
+          "customSize": true,
+          "depth": 7,
+          "height": 311,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "supesokitsune_leg",
+          "persistentUuid": "be48b468-f59b-408a-bbe8-528131d4f5d3",
+          "width": 311,
+          "x": 1078,
+          "y": -416,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 7,
+          "height": 332,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "supesokitsune_leg",
+          "persistentUuid": "913ee576-c0d8-437c-9cc3-0113b26d038e",
+          "width": 332,
+          "x": 773,
+          "y": -420,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 10,
+          "height": 472,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "supesokitsune_tails",
+          "persistentUuid": "176795be-b86d-4a9c-b9b8-22125a48c5f5",
+          "width": 472,
+          "x": 1212,
+          "y": -753,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Stamina",
+          "persistentUuid": "1db472af-fdae-4875-9f2a-a4546523c943",
+          "width": 0,
+          "x": 1740,
+          "y": 884,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 157,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "mo",
+          "persistentUuid": "4170ac1c-e217-49f9-9a82-d39cc1fda98e",
+          "width": 157,
+          "x": 1762,
+          "y": 881,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 157,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Am",
+          "persistentUuid": "b18c5695-6867-48e3-a920-bd216d176855",
+          "width": 157,
+          "x": 1629,
+          "y": 882,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 67,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Inventory_slot",
+          "persistentUuid": "bea83e47-2782-4169-9346-51635aca44e9",
+          "width": 67,
+          "x": 1623,
+          "y": 1004,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 25,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Quantity_of_ammo",
+          "persistentUuid": "bd48310b-9edb-4e60-ac96-45c15250d2ef",
+          "width": 45,
+          "x": 1653,
+          "y": 1030,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 48,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Inventory_bullet",
+          "persistentUuid": "f7ef378e-14df-4b5f-aa79-19e50c5d95bc",
+          "width": 19,
+          "x": 1632,
+          "y": 1014,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 67,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Inventory_slot",
+          "persistentUuid": "d482033b-7713-4283-b3ab-cb795f52687a",
+          "width": 67,
+          "x": 1697,
+          "y": 1004,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 67,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Inventory_slot",
+          "persistentUuid": "1291054e-c5c0-4a7b-900c-54ad291032eb",
+          "width": 67,
+          "x": 1771,
+          "y": 1004,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 67,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Inventory_slot",
+          "persistentUuid": "8013fb22-7589-438c-962a-42cda9984229",
+          "width": 67,
+          "x": 1845,
+          "y": 1004,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 82,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "AmmoInventory",
+          "persistentUuid": "95fc2a55-af38-49ed-87f0-cc77e27cc3a9",
+          "width": 298,
+          "x": 1619,
+          "y": 996,
+          "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2475,7 +2623,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "NewText",
+          "name": "Quantity_of_ammo",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -2529,18 +2677,18 @@
           "assetStoreId": "0a398f1656e34f64758c909a71ca17cd69fd41bd251d89ff5a640303c4279f50",
           "name": "OverheatBar",
           "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-          "variant": "Blue Flat Bar",
+          "variant": "Stamina",
           "variables": [],
           "effects": [],
           "behaviors": [
             {
+              "leftEdgeAnchor": 2,
               "name": "Anchor",
+              "topEdgeAnchor": 2,
               "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
-              "leftEdgeAnchor": 0,
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
-              "topEdgeAnchor": 0,
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -2553,6 +2701,300 @@
             "BarRightPadding": 4,
             "MaxValue": 96,
             "InitialValue": 96
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Head_Supesokitshune",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "supesokitsune.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 1
+                          },
+                          {
+                            "x": 39,
+                            "y": 1
+                          },
+                          {
+                            "x": 39,
+                            "y": 50
+                          },
+                          {
+                            "x": 2,
+                            "y": 50
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "supesokitsune_body",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "supesokitsune-body.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 2
+                          },
+                          {
+                            "x": 47,
+                            "y": 2
+                          },
+                          {
+                            "x": 47,
+                            "y": 22
+                          },
+                          {
+                            "x": 3,
+                            "y": 22
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "supesokitsune_leg",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "supesokitsune-leg.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 5
+                          },
+                          {
+                            "x": 38,
+                            "y": 5
+                          },
+                          {
+                            "x": 38,
+                            "y": 47
+                          },
+                          {
+                            "x": 5,
+                            "y": 47
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "supesokitsune_tails",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pixilart-drawing(15).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 4
+                          },
+                          {
+                            "x": 46,
+                            "y": 4
+                          },
+                          {
+                            "x": 46,
+                            "y": 43
+                          },
+                          {
+                            "x": 5,
+                            "y": 43
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Stamina",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "string": "16/16",
+          "font": "HyperliminalSuperposition-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "16/16",
+            "font": "HyperliminalSuperposition-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
           }
         }
       ],
@@ -2608,138 +3050,166 @@
             "objectName": "Inventory_slot"
           },
           {
-            "objectName": "NewText"
+            "objectName": "Quantity_of_ammo"
+          },
+          {
+            "objectName": "Stamina"
           },
           {
             "objectName": "OverheatBar"
+          },
+          {
+            "objectName": "Head_Supesokitshune"
+          },
+          {
+            "objectName": "supesokitsune_body"
+          },
+          {
+            "objectName": "supesokitsune_leg"
+          },
+          {
+            "objectName": "supesokitsune_tails"
           }
         ]
       },
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "At the start",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ParticleSystem::StopEmission"
+                  },
+                  "parameters": [
+                    "DashAfterEffect"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ParticleSystem::ZoneRadius"
+                  },
+                  "parameters": [
+                    "DashAfterEffect",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ParticleSystem::ParticleLifeTimeMax"
+                  },
+                  "parameters": [
+                    "DashAfterEffect",
+                    "=",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ParticleSystem::ParticleEmitter::SetMaxParticlesCount"
+                  },
+                  "parameters": [
+                    "DashAfterEffect",
+                    "=",
+                    "30"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ParticleSystem::ParticleEmitter::SetParticleRotationMinSpeed"
+                  },
+                  "parameters": [
+                    "DashAfterEffect",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ParticleSystem::ParticleEmitter::SetParticleRotationMaxSpeed"
+                  },
+                  "parameters": [
+                    "DashAfterEffect",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Background",
+                    "Resizable",
+                    "ScreenWidth() + 200",
+                    "ScreenWidth() + 200"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenterX"
+                  },
+                  "parameters": [
+                    "ShipThrust",
+                    "=",
+                    "(ScreenWidth()+180)/2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenterX"
+                  },
+                  "parameters": [
+                    "DashAfterEffect",
+                    "=",
+                    "ShipThrust.CenterX()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenterY"
+                  },
+                  "parameters": [
+                    "DashAfterEffect",
+                    "=",
+                    "ShipThrust.CenterY()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "ShipThrust",
+                    "Animation",
+                    "=",
+                    "\"Idle\""
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "ParticleSystem::StopEmission"
-              },
-              "parameters": [
-                "DashAfterEffect"
-              ]
-            },
-            {
-              "type": {
-                "value": "ParticleSystem::ZoneRadius"
-              },
-              "parameters": [
-                "DashAfterEffect",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ParticleSystem::ParticleLifeTimeMax"
-              },
-              "parameters": [
-                "DashAfterEffect",
-                "=",
-                "0.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "ParticleSystem::ParticleEmitter::SetMaxParticlesCount"
-              },
-              "parameters": [
-                "DashAfterEffect",
-                "=",
-                "30"
-              ]
-            },
-            {
-              "type": {
-                "value": "ParticleSystem::ParticleEmitter::SetParticleRotationMinSpeed"
-              },
-              "parameters": [
-                "DashAfterEffect",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "ParticleSystem::ParticleEmitter::SetParticleRotationMaxSpeed"
-              },
-              "parameters": [
-                "DashAfterEffect",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResizableCapability::ResizableBehavior::SetSize"
-              },
-              "parameters": [
-                "Background",
-                "Resizable",
-                "ScreenWidth() + 200",
-                "ScreenWidth() + 200"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCenterX"
-              },
-              "parameters": [
-                "ShipThrust",
-                "=",
-                "(ScreenWidth()+180)/2"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCenterX"
-              },
-              "parameters": [
-                "DashAfterEffect",
-                "=",
-                "ShipThrust.CenterX()"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCenterY"
-              },
-              "parameters": [
-                "DashAfterEffect",
-                "=",
-                "ShipThrust.CenterY()"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "ShipThrust",
-                "Animation",
-                "=",
-                "\"Idle\""
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
           "colorB": 228,
@@ -2755,10 +3225,50 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "AnyKeyReleased"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    ""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"w\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"a\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"s\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"d\""
+                      ]
+                    }
                   ]
                 }
               ],
@@ -3060,59 +3570,40 @@
                     ""
                   ]
                 }
-              ],
-              "events": [
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "ShipThrust",
-                        "Overheat",
-                        "!=",
-                        "0"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ParticleSystem::StopEmission"
-                      },
-                      "parameters": [
-                        "DashAfterEffect"
-                      ]
-                    }
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "ShipThrust",
+                    "Overheat",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ParticleSystem::StopEmission"
+                  },
+                  "parameters": [
+                    "DashAfterEffect"
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "ShipThrust",
-                        "Overheat",
-                        ">",
-                        "0"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "DashAfterEffect",
-                        ""
-                      ]
-                    }
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "DashAfterEffect",
+                    "=",
+                    "-100000000000"
                   ]
                 }
               ]
@@ -3155,7 +3646,7 @@
                       "parameters": [
                         "ShipThrust",
                         "Overheat",
-                        "<",
+                        "<=",
                         "0"
                       ]
                     }
@@ -3173,13 +3664,12 @@
                 },
                 {
                   "type": {
-                    "value": "SetNumberObjectVariable"
+                    "value": "MettreX"
                   },
                   "parameters": [
-                    "ShipThrust",
-                    "Overheat",
+                    "DashAfterEffect",
                     "=",
-                    "0.1"
+                    "-100000000000"
                   ]
                 }
               ]
@@ -3189,11 +3679,30 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyFromTextPressed"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "",
-                    "\"LShift\""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"LShift\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "ShipThrust",
+                        "Overheat",
+                        ">",
+                        "0"
+                      ]
+                    }
                   ]
                 }
               ],
@@ -3235,17 +3744,6 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "ShipThrust",
-                        "Overheat",
-                        "!=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "KeyFromTextPressed"
                       },
                       "parameters": [
@@ -3281,17 +3779,6 @@
                   "aiGeneratedEventId": "01K9ZMEZ4T8AG4J8JA4FFW3VXF",
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "ShipThrust",
-                        "Overheat",
-                        "!=",
-                        "0"
-                      ]
-                    },
                     {
                       "type": {
                         "value": "KeyFromTextPressed"
@@ -3331,17 +3818,6 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "ShipThrust",
-                        "Overheat",
-                        "!=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "KeyFromTextPressed"
                       },
                       "parameters": [
@@ -3377,17 +3853,6 @@
                   "aiGeneratedEventId": "01K9ZMEZ4T8AG4J8JA4FFW3VXF",
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "ShipThrust",
-                        "Overheat",
-                        "!=",
-                        "0"
-                      ]
-                    },
                     {
                       "type": {
                         "value": "KeyFromTextPressed"
@@ -3431,6 +3896,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Shooting",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3511,132 +3977,145 @@
           "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Enemies Handling",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "CenterX"
-              },
-              "parameters": [
-                "Enemy_1",
-                ">=",
-                "ScreenWidth()+180-(Enemy_1.Width()/2)"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CenterX"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    ">=",
+                    "ScreenWidth()+180-(Enemy_1.Width()/2)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "Enemy_1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "Flippable",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Alien_rotation",
+                    "=",
+                    "-3"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "Enemy_1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "Flippable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Alien_rotation",
+                    "=",
+                    "3"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "+",
+                    "Alien_rotation"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenterX"
+                  },
+                  "parameters": [
+                    "DashAfterEffect",
+                    "=",
+                    "ShipThrust.CenterX()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenterY"
+                  },
+                  "parameters": [
+                    "DashAfterEffect",
+                    "=",
+                    "ShipThrust.CenterY()"
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "AjoutObjConcern"
-              },
-              "parameters": [
-                "",
-                "Enemy_1"
-              ]
-            },
-            {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
-              },
-              "parameters": [
-                "Enemy_1",
-                "Flippable",
-                "no"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Alien_rotation",
-                "=",
-                "-3"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "Enemy_1",
-                "<=",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AjoutObjConcern"
-              },
-              "parameters": [
-                "Enemy_1",
-                "Enemy_1"
-              ]
-            },
-            {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
-              },
-              "parameters": [
-                "Enemy_1",
-                "Flippable",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Alien_rotation",
-                "=",
-                "3"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreX"
-              },
-              "parameters": [
-                "Enemy_1",
-                "+",
-                "Alien_rotation"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCenterX"
-              },
-              "parameters": [
-                "DashAfterEffect",
-                "=",
-                "ShipThrust.CenterX()"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetCenterY"
-              },
-              "parameters": [
-                "DashAfterEffect",
-                "=",
-                "ShipThrust.CenterY()"
-              ]
-            }
-          ]
+          "parameters": []
         }
       ],
       "layers": [
@@ -13814,6 +14293,265 @@
             }
           ],
           "variants": [
+            {
+              "areaMaxX": 224,
+              "areaMaxY": 34,
+              "areaMaxZ": 64,
+              "areaMinX": 0,
+              "areaMinY": 0,
+              "areaMinZ": 0,
+              "name": "Stamina",
+              "objects": [
+                {
+                  "assetStoreId": "",
+                  "bold": true,
+                  "italic": false,
+                  "name": "Label",
+                  "smoothed": true,
+                  "type": "TextObject::Text",
+                  "underlined": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ],
+                  "string": "8 / 16",
+                  "font": "HyperliminalSuperposition-Regular.ttf",
+                  "textAlignment": "center",
+                  "characterSize": 16,
+                  "color": {
+                    "b": 0,
+                    "g": 0,
+                    "r": 0
+                  },
+                  "content": {
+                    "bold": true,
+                    "isOutlineEnabled": false,
+                    "isShadowEnabled": false,
+                    "italic": false,
+                    "outlineColor": "255;255;255",
+                    "outlineThickness": 2,
+                    "shadowAngle": 90,
+                    "shadowBlurRadius": 2,
+                    "shadowColor": "0;0;0",
+                    "shadowDistance": 4,
+                    "shadowOpacity": 127,
+                    "smoothed": true,
+                    "underlined": false,
+                    "text": "8 / 16",
+                    "font": "HyperliminalSuperposition-Regular.ttf",
+                    "textAlignment": "center",
+                    "verticalTextAlignment": "center",
+                    "characterSize": 16,
+                    "lineHeight": 0,
+                    "color": "0;0;0"
+                  }
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 0,
+                  "height": 24,
+                  "leftMargin": 0,
+                  "name": "FillBar",
+                  "rightMargin": 0,
+                  "texture": "stamina-bar-outline-pixilart.png",
+                  "tiled": false,
+                  "topMargin": 0,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 24,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "ResourceBar",
+                      "type": "PanelSpriteContinuousBar::ResourceBar",
+                      "Value": 1,
+                      "MaxValue": 3,
+                      "PreviousValue": 0,
+                      "CurrentValue": 1
+                    },
+                    {
+                      "name": "Tween",
+                      "type": "Tween::TweenBehavior"
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 0,
+                  "height": 24,
+                  "leftMargin": 0,
+                  "name": "Buffer",
+                  "rightMargin": 0,
+                  "texture": "stamina-bar-outline-pixilart.png",
+                  "tiled": false,
+                  "topMargin": 0,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 24,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "Tween",
+                      "type": "Tween::TweenBehavior"
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 6,
+                  "height": 34,
+                  "leftMargin": 4,
+                  "name": "Background",
+                  "rightMargin": 4,
+                  "texture": "stamina1.png",
+                  "tiled": false,
+                  "topMargin": 6,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 224,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ]
+                }
+              ],
+              "objectsFolderStructure": {
+                "folderName": "__ROOT",
+                "children": [
+                  {
+                    "objectName": "Label"
+                  },
+                  {
+                    "objectName": "FillBar"
+                  },
+                  {
+                    "objectName": "Buffer"
+                  },
+                  {
+                    "objectName": "Background"
+                  }
+                ]
+              },
+              "objectsGroups": [],
+              "layers": [
+                {
+                  "ambientLightColorB": 200,
+                  "ambientLightColorG": 200,
+                  "ambientLightColorR": 200,
+                  "camera3DFarPlaneDistance": 10000,
+                  "camera3DFieldOfView": 45,
+                  "camera3DNearPlaneDistance": 3,
+                  "cameraType": "",
+                  "followBaseLayerCamera": false,
+                  "isLightingLayer": false,
+                  "isLocked": false,
+                  "name": "",
+                  "renderingType": "",
+                  "visibility": true,
+                  "cameras": [
+                    {
+                      "defaultSize": true,
+                      "defaultViewport": true,
+                      "height": 0,
+                      "viewportBottom": 1,
+                      "viewportLeft": 0,
+                      "viewportRight": 1,
+                      "viewportTop": 0,
+                      "width": 0
+                    }
+                  ],
+                  "effects": []
+                }
+              ],
+              "instances": [
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 24,
+                  "layer": "",
+                  "name": "Background",
+                  "persistentUuid": "24882334-eec8-403e-8bf1-70fc928a46e6",
+                  "width": 217,
+                  "x": 5,
+                  "y": 5,
+                  "zOrder": 4,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 24,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "FillBar",
+                  "persistentUuid": "87afe7bc-6a5d-44e4-9e77-ec116d1a1593",
+                  "width": 216,
+                  "x": 5,
+                  "y": 5,
+                  "zOrder": 2,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                }
+              ],
+              "editionSettings": {
+                "grid": false,
+                "gridType": "rectangular",
+                "gridWidth": 32,
+                "gridHeight": 32,
+                "gridOffsetX": 0,
+                "gridOffsetY": 0,
+                "gridColor": 10401023,
+                "gridAlpha": 0.8,
+                "snap": false,
+                "zoomFactor": 2.396765590148044,
+                "windowMask": false,
+                "selectedLayer": ""
+              }
+            },
             {
               "areaMaxX": 224,
               "areaMaxY": 34,
