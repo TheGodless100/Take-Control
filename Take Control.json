@@ -2604,7 +2604,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.599573838911138,
+        "zoomFactor": 0.08473489146618268,
         "windowMask": false,
         "selectedLayer": "UI"
       },
@@ -2902,8 +2902,8 @@
           "name": "OverheatBar",
           "persistentUuid": "9f3610a9-6b4a-4a32-ba90-c98e73f147a1",
           "width": 296,
-          "x": 950,
-          "y": 1032,
+          "x": 1103,
+          "y": 1012,
           "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
@@ -2969,8 +2969,8 @@
           "name": "Stamina",
           "persistentUuid": "1db472af-fdae-4875-9f2a-a4546523c943",
           "width": 0,
-          "x": 1070,
-          "y": 1039,
+          "x": 1223,
+          "y": 1019,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -2985,8 +2985,8 @@
           "name": "Health",
           "persistentUuid": "54d1506c-e6e4-4beb-b768-0b3f16889ef9",
           "width": 296,
-          "x": 951,
-          "y": 999,
+          "x": 1104,
+          "y": 979,
           "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
@@ -3036,8 +3036,8 @@
           "name": "debug",
           "persistentUuid": "99675ed5-5115-4818-ba5e-5a8ddaae0037",
           "width": 643,
-          "x": 602,
-          "y": 653,
+          "x": 224,
+          "y": 766,
           "zOrder": 44,
           "numberProperties": [],
           "stringProperties": [],
@@ -3053,8 +3053,8 @@
           "name": "full_supesukitsune",
           "persistentUuid": "49146c03-e637-4baf-8cc7-e59364bcbb01",
           "width": 947,
-          "x": 1300,
-          "y": -810,
+          "x": 111,
+          "y": 120,
           "zOrder": 45,
           "numberProperties": [],
           "stringProperties": [],
@@ -3069,9 +3069,9 @@
           "name": "End_Result",
           "persistentUuid": "48a6b6aa-ab6f-457d-8488-24b88e4c5a4e",
           "width": 0,
-          "x": 536,
-          "y": -425,
-          "zOrder": 48,
+          "x": 261,
+          "y": 341,
+          "zOrder": 51,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3086,9 +3086,9 @@
           "name": "Kaboom",
           "persistentUuid": "35e26aaf-1c81-4128-80e2-136446120145",
           "width": 2190,
-          "x": -1594,
-          "y": -1250,
-          "zOrder": 47,
+          "x": -353,
+          "y": -72,
+          "zOrder": 50,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3096,15 +3096,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 6,
-          "height": 646,
+          "depth": 5,
+          "height": 528,
           "keepRatio": true,
           "layer": "UI",
           "name": "Powerups",
           "persistentUuid": "c01d4e48-b5d8-4f34-b4fa-51d848138a5b",
-          "width": 646,
-          "x": 1274,
-          "y": 434,
+          "width": 528,
+          "x": 1392,
+          "y": 552,
           "zOrder": 49,
           "numberProperties": [],
           "stringProperties": [],
@@ -7997,7 +7997,18 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -8322,7 +8333,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "Supesukitsune"
+                    "full_supesukitsune"
                   ]
                 },
                 {
@@ -8360,6 +8371,26 @@
                   },
                   "parameters": [
                     "End_Result"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "full_supesukitsune",
+                    "=",
+                    "220"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "full_supesukitsune",
+                    "=",
+                    "11"
                   ]
                 }
               ],
@@ -9446,17 +9477,6 @@
                 "+",
                 "Alien_rotation"
               ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "debug",
-                "Text",
-                "=",
-                "ToString(floor(full_supesukitsune.X())) + \" \" + ToString(floor(full_supesukitsune.Y())) + EnemyCount"
-              ]
             }
           ]
         },
@@ -9534,9 +9554,7 @@
           ]
         },
         {
-          "aiGeneratedEventId": "01KA4SEHS02JQ3YVK57596QM4X",
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Enemy_1",
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
@@ -9565,11 +9583,33 @@
                     ">=",
                     "Enemy_1.RandomFireCooldown"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "Health",
+                    ">",
+                    "0"
+                  ]
                 }
               ]
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "debug",
+                "Text",
+                "=",
+                "Enemy_1.Health"
+              ]
+            },
             {
               "type": {
                 "value": "FireBullet::FireBullet::Fire"
@@ -9661,14 +9701,33 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "Enemy_1",
-                "bullet",
-                "",
-                "",
-                ""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "bullet",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "Health",
+                    ">",
+                    "0"
+                  ]
+                }
               ]
             }
           ],
@@ -9731,6 +9790,15 @@
                     "Animation",
                     "=",
                     "\"die\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeLayer"
+                  },
+                  "parameters": [
+                    "Enemy_1",
+                    "\"Dead\""
                   ]
                 },
                 {
@@ -9835,73 +9903,110 @@
                 "full_supesukitsune",
                 "Opacity"
               ]
-            },
+            }
+          ],
+          "events": [
             {
-              "type": {
-                "value": "AddForceVersPos"
-              },
-              "parameters": [
-                "full_supesukitsune",
-                "530",
-                "250",
-                "1310",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "full_supesukitsune"
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreX"
-              },
-              "parameters": [
-                "Sh",
-                "=",
-                "530"
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreY"
-              },
-              "parameters": [
-                "Sh",
-                "=",
-                "520"
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreX"
-              },
-              "parameters": [
-                "oP",
-                "=",
-                "840"
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreY"
-              },
-              "parameters": [
-                "oP",
-                "=",
-                "520"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "full_supesukitsune",
+                        ">",
+                        "530"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "full_supesukitsune",
+                        "<",
+                        "250"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "full_supesukitsune",
+                    "-",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "full_supesukitsune",
+                    "+",
+                    "100"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "Sh",
+                        "=",
+                        "530"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "oP",
+                        "=",
+                        "520"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "oP",
+                        "=",
+                        "840"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "Sh",
+                        "=",
+                        "520"
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -10034,6 +10139,59 @@
               "width": 0
             }
           ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Dead",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
