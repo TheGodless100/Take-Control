@@ -2604,7 +2604,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.08473489146618268,
+        "zoomFactor": 0.3192894589690332,
         "windowMask": false,
         "selectedLayer": "UI"
       },
@@ -3029,23 +3029,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 1,
-          "height": 297,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "debug",
-          "persistentUuid": "99675ed5-5115-4818-ba5e-5a8ddaae0037",
-          "width": 643,
-          "x": 224,
-          "y": 766,
-          "zOrder": 44,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "depth": 2,
           "height": 696,
           "keepRatio": true,
@@ -3086,8 +3069,8 @@
           "name": "Kaboom",
           "persistentUuid": "35e26aaf-1c81-4128-80e2-136446120145",
           "width": 2190,
-          "x": -353,
-          "y": -72,
+          "x": -52,
+          "y": -59,
           "zOrder": 50,
           "numberProperties": [],
           "stringProperties": [],
@@ -5025,6 +5008,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -5035,10 +5020,8 @@
               "gridOffsetX": 0,
               "gridOffsetY": 0,
               "maxSpeed": 200,
-              "name": "Pathfinding",
               "rotateObject": true,
-              "smoothingMaxCellGap": 1,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "smoothingMaxCellGap": 1
             }
           ],
           "animations": [
@@ -7999,13 +7982,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
