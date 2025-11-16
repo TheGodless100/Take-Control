@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
     "version": "1.0.0",
-    "name": "Take Control",
+    "name": "Invader Shenanigans",
     "description": "",
     "author": "",
     "windowWidth": 1920,
@@ -28,15 +28,43 @@
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
-    "platformSpecificAssets": {},
+    "platformSpecificAssets": {
+      "android-icon-144": "firenothrust.png",
+      "android-icon-192": "firenothrust.png",
+      "android-icon-36": "firenothrust.png",
+      "android-icon-48": "firenothrust.png",
+      "android-icon-72": "firenothrust.png",
+      "android-icon-96": "firenothrust.png",
+      "android-windowSplashScreenAnimatedIcon": "firenothrust.png",
+      "desktop-icon-512": "sr5z4e2192ad61aws3.png",
+      "ios-icon-100": "firenothrust.png",
+      "ios-icon-1024": "firenothrust.png",
+      "ios-icon-114": "firenothrust.png",
+      "ios-icon-120": "firenothrust.png",
+      "ios-icon-144": "firenothrust.png",
+      "ios-icon-152": "firenothrust.png",
+      "ios-icon-167": "firenothrust.png",
+      "ios-icon-180": "firenothrust.png",
+      "ios-icon-20": "firenothrust.png",
+      "ios-icon-29": "firenothrust.png",
+      "ios-icon-40": "firenothrust.png",
+      "ios-icon-50": "firenothrust.png",
+      "ios-icon-57": "firenothrust.png",
+      "ios-icon-58": "firenothrust.png",
+      "ios-icon-60": "firenothrust.png",
+      "ios-icon-72": "firenothrust.png",
+      "ios-icon-76": "firenothrust.png",
+      "ios-icon-80": "firenothrust.png",
+      "ios-icon-87": "firenothrust.png"
+    },
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
-      "backgroundImageResourceName": "",
+      "backgroundImageResourceName": "pixilart-drawing(18)_scaled_20x_pngcrushed.png",
       "gdevelopLogoStyle": "light",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0,
-      "minDuration": 1.5,
+      "minDuration": 2,
       "progressBarColor": 16777215,
       "progressBarHeight": 20,
       "progressBarMaxWidth": 200,
@@ -729,6 +757,46 @@
         "name": "health bar.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "../../../Downloads/back-leg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\back-leg.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "front-leg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "front-leg.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "back-leg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "back-leg.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixilart-drawing(18)_scaled_20x_pngcrushed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixilart-drawing(18)_scaled_20x_pngcrushed.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "sr5z4e2192ad61aws3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sr5z4e2192ad61aws3.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -760,9 +828,9 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.17576384491805858,
+        "zoomFactor": 0.2796226521839488,
         "windowMask": false,
-        "selectedLayer": "Lighting"
+        "selectedLayer": "UI"
       },
       "objectsGroups": [
         {
@@ -786,6 +854,26 @@
               "name": "mo"
             }
           ]
+        },
+        {
+          "name": "Supesukitsune",
+          "objects": [
+            {
+              "name": "Head_Supesokitshune"
+            },
+            {
+              "name": "supesokitsune_body"
+            },
+            {
+              "name": "supesokitsune_front_leg"
+            },
+            {
+              "name": "supesokitsune_back_leg"
+            },
+            {
+              "name": "supesokitsune_tails"
+            }
+          ]
         }
       ],
       "variables": [
@@ -797,7 +885,7 @@
         {
           "name": "EnemyCount",
           "type": "number",
-          "value": 0
+          "value": 10
         },
         {
           "name": "Alien_rotation",
@@ -971,8 +1059,8 @@
           "name": "Background",
           "persistentUuid": "aec1469a-1ec0-444f-b5b5-d49c07fee7a3",
           "width": 1955,
-          "x": -12,
-          "y": -1,
+          "x": 0,
+          "y": 0,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -1053,12 +1141,11 @@
           "keepRatio": true,
           "layer": "UI",
           "name": "Head_Supesokitshune",
-          "opacity": 0,
           "persistentUuid": "28fc93c5-1d88-4d01-9330-46c24041c5cc",
           "width": 282,
-          "x": 750,
-          "y": -611,
-          "zOrder": 27,
+          "x": 1382,
+          "y": -58,
+          "zOrder": 42,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1071,48 +1158,11 @@
           "keepRatio": true,
           "layer": "UI",
           "name": "supesokitsune_body",
-          "opacity": 0,
           "persistentUuid": "c49ad0d4-6143-489e-bccb-eb424d7994e3",
           "width": 475,
-          "x": 853,
-          "y": -484,
-          "zOrder": 26,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 336,
-          "customSize": true,
-          "depth": 7,
-          "height": 311,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "supesokitsune_leg",
-          "opacity": 0,
-          "persistentUuid": "be48b468-f59b-408a-bbe8-528131d4f5d3",
-          "width": 311,
-          "x": 1078,
-          "y": -416,
-          "zOrder": 28,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 7,
-          "height": 332,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "supesokitsune_leg",
-          "opacity": 0,
-          "persistentUuid": "913ee576-c0d8-437c-9cc3-0113b26d038e",
-          "width": 332,
-          "x": 773,
-          "y": -420,
-          "zOrder": 29,
+          "x": 1485,
+          "y": 69,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1125,12 +1175,11 @@
           "keepRatio": true,
           "layer": "UI",
           "name": "supesokitsune_tails",
-          "opacity": 0,
           "persistentUuid": "176795be-b86d-4a9c-b9b8-22125a48c5f5",
           "width": 472,
-          "x": 1212,
-          "y": -753,
-          "zOrder": 3,
+          "x": 1844,
+          "y": -200,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1349,6 +1398,57 @@
           "x": 1620,
           "y": 847,
           "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 235,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "supesokitsune_front_leg",
+          "persistentUuid": "f24f6d74-6186-4e64-8e1c-f55681436266",
+          "width": 209,
+          "x": 1384,
+          "y": 156,
+          "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 331,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "supesokitsune_back_leg",
+          "persistentUuid": "7eb99f9b-3841-4cd8-8eec-da80fe63d664",
+          "width": 205,
+          "x": 1710,
+          "y": 133,
+          "zOrder": 43,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 297,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "debug",
+          "persistentUuid": "99675ed5-5115-4818-ba5e-5a8ddaae0037",
+          "width": 643,
+          "x": 386,
+          "y": 316,
+          "zOrder": 44,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2752,7 +2852,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "supesokitsune_leg",
+          "name": "supesokitsune_front_leg",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -2769,7 +2869,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "supesokitsune-leg.png",
+                      "image": "front-leg.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2785,20 +2885,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 5,
-                            "y": 5
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 38,
-                            "y": 5
+                            "x": 253,
+                            "y": 0
                           },
                           {
-                            "x": 38,
-                            "y": 47
+                            "x": 253,
+                            "y": 285
                           },
                           {
-                            "x": 5,
-                            "y": 47
+                            "x": 0,
+                            "y": 285
                           }
                         ]
                       ]
@@ -3090,6 +3190,109 @@
             "MaxValue": 96,
             "InitialValue": 96
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "supesokitsune_back_leg",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "back-leg.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 41,
+                            "y": 0
+                          },
+                          {
+                            "x": 254,
+                            "y": 0
+                          },
+                          {
+                            "x": 254,
+                            "y": 415
+                          },
+                          {
+                            "x": 41,
+                            "y": 415
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "debug",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Big D Randy",
+          "font": "HyperliminalSuperposition-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 72,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Big D Randy",
+            "font": "HyperliminalSuperposition-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 72,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -3162,7 +3365,10 @@
             "objectName": "supesokitsune_body"
           },
           {
-            "objectName": "supesokitsune_leg"
+            "objectName": "supesokitsune_front_leg"
+          },
+          {
+            "objectName": "supesokitsune_back_leg"
           },
           {
             "objectName": "supesokitsune_tails"
@@ -3172,6 +3378,9 @@
           },
           {
             "objectName": "Health"
+          },
+          {
+            "objectName": "debug"
           }
         ]
       },
@@ -3339,6 +3548,24 @@
                     "=",
                     "1",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Supesukitsune"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "ShopOpen",
+                    "False",
+                    "true"
                   ]
                 }
               ],
@@ -4404,6 +4631,17 @@
                 "=",
                 "ShipThrust.CenterY()"
               ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "Health",
+                "=",
+                "ShipThrust.Health",
+                ""
+              ]
             }
           ]
         },
@@ -4475,7 +4713,7 @@
                 "ShipThrust",
                 "Health",
                 "-",
-                "10"
+                "6"
               ]
             }
           ]
@@ -4668,21 +4906,11 @@
           "conditions": [
             {
               "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "EnemyCount",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
                 "value": "BooleanVariable"
               },
               "parameters": [
                 "ShopOpen",
-                "false",
+                "True",
                 ""
               ]
             }
@@ -4690,48 +4918,30 @@
           "actions": [
             {
               "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
+                "value": "Montre"
               },
               "parameters": [
-                "Head_Supesokitshune",
-                "Opacity",
-                "=",
-                "100"
+                "Supesukitsune",
+                "Opacity"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
+                "value": "NumberVariable"
               },
               "parameters": [
-                "supesokitsune_body",
-                "Opacity",
-                "=",
-                "100"
+                "EnemyCount",
+                "<=",
+                "0"
               ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "supesokitsune_leg",
-                "Opacity",
-                "=",
-                "100"
-              ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "supesokitsune_tails",
-                "Opacity",
-                "=",
-                "100"
-              ]
-            },
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "value": "SetBooleanVariable"
@@ -4740,6 +4950,67 @@
                 "ShopOpen",
                 "True",
                 "true"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Supesukitsune",
+                "Opacity"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "debug",
+                "Text",
+                "=",
+                "\"'Winner, winner you fucking nigger' - Max Jos Verstapen\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceVersPos"
+              },
+              "parameters": [
+                "Supesukitsune",
+                "ShipThrust.X()",
+                "ShipThrust.Y()",
+                "10",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "ShipThrust",
+                "Health",
+                "<=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "debug",
+                "Text",
+                "=",
+                "\"YOU LOSE\""
               ]
             }
           ]
