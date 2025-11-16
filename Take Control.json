@@ -2549,6 +2549,30 @@
         "name": "frame_60_delay-0.03s3.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "powerup-slots.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "powerup-slots.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "enemy-ammo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "enemy-ammo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/enemy-ammo.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "enemy-ammo",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2580,7 +2604,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2006974131455065,
+        "zoomFactor": 0.599573838911138,
         "windowMask": false,
         "selectedLayer": "UI"
       },
@@ -2637,7 +2661,7 @@
         {
           "name": "EnemyCount",
           "type": "number",
-          "value": 10
+          "value": 5
         },
         {
           "name": "Alien_rotation",
@@ -2878,8 +2902,8 @@
           "name": "OverheatBar",
           "persistentUuid": "9f3610a9-6b4a-4a32-ba90-c98e73f147a1",
           "width": 296,
-          "x": 1620,
-          "y": 877,
+          "x": 950,
+          "y": 1032,
           "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
@@ -2945,195 +2969,9 @@
           "name": "Stamina",
           "persistentUuid": "1db472af-fdae-4875-9f2a-a4546523c943",
           "width": 0,
-          "x": 1740,
-          "y": 884,
+          "x": 1070,
+          "y": 1039,
           "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2,
-          "height": 157,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "mo",
-          "persistentUuid": "4170ac1c-e217-49f9-9a82-d39cc1fda98e",
-          "width": 157,
-          "x": 1762,
-          "y": 881,
-          "zOrder": 33,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2,
-          "height": 157,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "Am",
-          "persistentUuid": "b18c5695-6867-48e3-a920-bd216d176855",
-          "width": 157,
-          "x": 1629,
-          "y": 882,
-          "zOrder": 32,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 3,
-          "height": 67,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "Inventory_slot",
-          "persistentUuid": "bea83e47-2782-4169-9346-51635aca44e9",
-          "width": 67,
-          "x": 1623,
-          "y": 1004,
-          "zOrder": 34,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 25,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "Quantity_of_ammo",
-          "persistentUuid": "bd48310b-9edb-4e60-ac96-45c15250d2ef",
-          "width": 50,
-          "x": 1633,
-          "y": 1037,
-          "zOrder": 36,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 90,
-          "customSize": true,
-          "depth": 0,
-          "height": 48,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "Inventory_bullet",
-          "persistentUuid": "f7ef378e-14df-4b5f-aa79-19e50c5d95bc",
-          "width": 19,
-          "x": 1648,
-          "y": 997,
-          "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 3,
-          "height": 67,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "Inventory_slot",
-          "persistentUuid": "d482033b-7713-4283-b3ab-cb795f52687a",
-          "width": 67,
-          "x": 1697,
-          "y": 1004,
-          "zOrder": 34,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 3,
-          "height": 67,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "Inventory_slot",
-          "persistentUuid": "1291054e-c5c0-4a7b-900c-54ad291032eb",
-          "width": 67,
-          "x": 1771,
-          "y": 1004,
-          "zOrder": 34,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 3,
-          "height": 67,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "Inventory_slot",
-          "persistentUuid": "8013fb22-7589-438c-962a-42cda9984229",
-          "width": 67,
-          "x": 1845,
-          "y": 1004,
-          "zOrder": 34,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 82,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "AmmoInventory",
-          "persistentUuid": "95fc2a55-af38-49ed-87f0-cc77e27cc3a9",
-          "width": 298,
-          "x": 1619,
-          "y": 996,
-          "zOrder": 31,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 90,
-          "customSize": true,
-          "depth": 2,
-          "height": 83,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "Inventory_bullet_2",
-          "persistentUuid": "b50f46bb-c755-47fc-9201-d345b6daafd7",
-          "width": 83,
-          "x": 1690,
-          "y": 980,
-          "zOrder": 37,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "UI",
-          "name": "Quantity_of_ammo",
-          "persistentUuid": "2eb99578-0a27-4807-8281-6c8aee61dcb6",
-          "width": 0,
-          "x": 1710,
-          "y": 1038,
-          "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3147,8 +2985,8 @@
           "name": "Health",
           "persistentUuid": "54d1506c-e6e4-4beb-b768-0b3f16889ef9",
           "width": 296,
-          "x": 1620,
-          "y": 847,
+          "x": 951,
+          "y": 999,
           "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
@@ -3198,8 +3036,8 @@
           "name": "debug",
           "persistentUuid": "99675ed5-5115-4818-ba5e-5a8ddaae0037",
           "width": 643,
-          "x": -732,
-          "y": -318,
+          "x": 602,
+          "y": 653,
           "zOrder": 44,
           "numberProperties": [],
           "stringProperties": [],
@@ -3231,8 +3069,8 @@
           "name": "End_Result",
           "persistentUuid": "48a6b6aa-ab6f-457d-8488-24b88e4c5a4e",
           "width": 0,
-          "x": 670,
-          "y": 461,
+          "x": 536,
+          "y": -425,
           "zOrder": 48,
           "numberProperties": [],
           "stringProperties": [],
@@ -3248,9 +3086,26 @@
           "name": "Kaboom",
           "persistentUuid": "35e26aaf-1c81-4128-80e2-136446120145",
           "width": 2190,
-          "x": -152,
-          "y": -107,
+          "x": -1594,
+          "y": -1250,
           "zOrder": 47,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 6,
+          "height": 646,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Powerups",
+          "persistentUuid": "c01d4e48-b5d8-4f34-b4fa-51d848138a5b",
+          "width": 646,
+          "x": 1274,
+          "y": 434,
+          "zOrder": 49,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5611,16 +5466,17 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "enemy-ammo",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.25,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Bullet_1.png",
+                      "image": "enemy-ammo",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5636,20 +5492,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 1,
+                            "y": 13
                           },
                           {
-                            "x": 43,
-                            "y": 0
+                            "x": 50,
+                            "y": 13
                           },
                           {
-                            "x": 43,
-                            "y": 35
+                            "x": 50,
+                            "y": 37
                           },
                           {
-                            "x": 0,
-                            "y": 35
+                            "x": 1,
+                            "y": 37
                           }
                         ]
                       ]
@@ -8132,6 +7988,66 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Powerups",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "powerup-slots.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 7
+                          },
+                          {
+                            "x": 99,
+                            "y": 7
+                          },
+                          {
+                            "x": 99,
+                            "y": 93
+                          },
+                          {
+                            "x": 1,
+                            "y": 93
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -8229,6 +8145,9 @@
           },
           {
             "objectName": "Kaboom"
+          },
+          {
+            "objectName": "Powerups"
           }
         ]
       },
@@ -8546,7 +8465,7 @@
                   "parameters": [
                     "Alien_index",
                     "<=",
-                    "20"
+                    "EnemyCount"
                   ]
                 }
               ],
@@ -9527,6 +9446,17 @@
                 "+",
                 "Alien_rotation"
               ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "debug",
+                "Text",
+                "=",
+                "ToString(floor(full_supesukitsune.X())) + \" \" + ToString(floor(full_supesukitsune.Y())) + EnemyCount"
+              ]
             }
           ]
         },
@@ -9908,17 +9838,6 @@
             },
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "debug",
-                "Text",
-                "=",
-                "ToString(floor(full_supesukitsune.X())) + \" \" + ToString(floor(full_supesukitsune.Y()))"
-              ]
-            },
-            {
-              "type": {
                 "value": "AddForceVersPos"
               },
               "parameters": [
@@ -9972,7 +9891,7 @@
               "parameters": [
                 "oP",
                 "=",
-                "560"
+                "840"
               ]
             },
             {
